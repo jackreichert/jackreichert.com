@@ -53,9 +53,9 @@ jobs:
       - name: Build site
         if: github.event_name == 'workflow_dispatch' || steps.sync_commit.outputs.changed == 'true'
         env:
-          # Set the PATH_PREFIX repo variable to "/<repo-name>/" when serving
-          # from username.github.io/<repo-name> without a custom domain.
-          PATH_PREFIX: ${{ vars.PATH_PREFIX || '/' }}
+          # GitHub Pages serves this repo at https://jackreichert.github.io/jackreichert.com/
+          # so all assets must be rewritten to include the /<repo-name>/ prefix.
+          PATH_PREFIX: /jackreichert.com/
         run: npm run build
 
       - if: github.event_name == 'workflow_dispatch' || steps.sync_commit.outputs.changed == 'true'
