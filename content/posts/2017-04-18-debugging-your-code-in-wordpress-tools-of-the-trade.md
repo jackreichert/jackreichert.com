@@ -52,7 +52,7 @@ THE key to effective debugging is to know what you’re dealing with. These tool
 
 Volumes of ink has been used talking about [devtools,](https://developer.chrome.com/devtools) so I won’t go in depth here. ![devtools-window.png](https://jack.reichert.systems/wp-content/uploads/sites/3/2017/04/devtools-window.png) Firebug changed our lives. Read up on it, use it. Personally, I enjoy designing in it too. It’s not just for debugging. I used devtoops to build this mockup to nag @Dropbox to request a feature.
 
-<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper"><a href="https://twitter.com/JackReichert/status/817753945871450114" rel="nofollow">https://twitter.com/JackReichert/status/817753945871450114</a></div></figure>
+<figure class="wp-block-embed is-type-rich is-provider-x wp-block-embed-x"><div class="wp-block-embed__wrapper"><a href="https://twitter.com/JackReichert/status/817753945871450114" rel="nofollow">https://twitter.com/JackReichert/status/817753945871450114</a></div></figure>
 
 ### A good IDE
 

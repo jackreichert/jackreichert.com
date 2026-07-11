@@ -3,11 +3,13 @@ title: "What Others Are Saying"
 date: 2020-11-22
 permalink: "/what-others-are-saying/"
 wp_id: 290
-description: "Testimonials and recommendations from people Jack has worked with."
+description: "View recommendations on LinkedIn * * *"
 layout: page
 ---
 
 [View recommendations on LinkedIn](https://www.linkedin.com/in/jackreichert/details/recommendations/)
+
+\* \* \*
 
 I had the pleasure of working with and directly managing Jack up until widespread layoffs hit at Shopify. Jack was initially moved to my team as a result of some restructuring from shifting priorities. Jack had been working as a FED on his previous team, and upon joining my team switched disciplines to BED. Jack \[…\]
 
