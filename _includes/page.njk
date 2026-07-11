@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+{%- set isTestimonialsPage = page.url == "/what-others-are-saying/" %}
+{%- set canonicalUrl = site.url + (page.url or "/") %}
+<article class="page{% if isTestimonialsPage %} page--testimonials{% endif %}">
+  <h1 class="page-title">{{ title }}</h1>
+  <div class="post-body{% if isTestimonialsPage %} testimonials-body{% endif %}">
+    {% if isTestimonialsPage %}
+    <div class="testimonials-sheet">
+      {{ content | formatTestimonials | safe }}
+    </div>
+    {% else %}
+    {{ content | safe }}
+    {% endif %}
+  </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ title | json | safe }},
+  "description": {{ (description or site.description) | json | safe }},
+  "url": {{ canonicalUrl | json | safe }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.name | json | safe }},
+    "url": {{ site.url | json | safe }}
+  }
+}
+</script>

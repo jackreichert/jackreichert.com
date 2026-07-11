@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: Search
+permalink: /search/
+noindex: true
+---
+<section class="archive-wrap">
+  <header class="archive-head">
+    <h1>Search</h1>
+    <p>Search {{ collections.posts | length }} musings.</p>
+  </header>
+  <div id="search"></div>
+</section>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  (function () {
+    if (typeof window.PagefindUI === "undefined") return;
+    new PagefindUI({ element: "#search", showSubResults: true, showImages: false });
+  })();
+</script>
+
+<style>
+  #search {
+    --pagefind-ui-primary: var(--teal, oklch(0.459 0.086 224));
+    --pagefind-ui-text: var(--ink, oklch(0.2 0 0));
+    --pagefind-ui-background: var(--paper, oklch(1 0 0));
+    --pagefind-ui-border: oklch(0.84 0 0);
+    --pagefind-ui-tag: oklch(0.955 0 0);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 0;
+    --pagefind-ui-image-border-radius: 0;
+    --pagefind-ui-font: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+    font-size: 1.3125rem;
+  }
+
+  #search .pagefind-ui__search-input {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+  }
+
+  #search .pagefind-ui__result-title,
+  #search .pagefind-ui__result-title .pagefind-ui__result-link {
+    color: oklch(0.531 0.2 31.5);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  #search .pagefind-ui__result-link:hover {
+    color: oklch(0.459 0.086 224);
+    text-decoration: underline;
+  }
+
+  #search .pagefind-ui__message {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+</style>

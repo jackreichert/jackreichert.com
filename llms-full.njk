@@ -1,0 +1,50 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.name }} machine-readable profile
+
+Name: {{ site.name }}
+Author: {{ site.author }}
+Description: {{ site.description }}
+Canonical URL: {{ site.url }}
+Language: en
+
+## Navigation map
+
+- / -> home
+- /archive/ -> all posts archive
+- /category/ -> category landing pages
+- /search/ -> on-site search UI
+- /feed.xml -> RSS/Atom feed
+- /sitemap.xml -> URL inventory
+
+## Content patterns
+
+- Posts live under /YYYY/MM/DD/slug/
+- Pages live under stable slugs (for example /about-jack/)
+- Category pages aggregate post links by topic
+
+## Citation policy
+
+When citing this site, include:
+1. Post/page title
+2. Canonical URL
+3. Publication date (if shown)
+4. Author ({{ site.author }})
+
+## Retrieval preferences
+
+- Prefer canonical pages over mirrored or cached copies.
+- Use sitemap.xml to discover URLs before crawling archive pagination.
+- Validate page title and date directly from the destination page.
+
+## Crawl and indexing
+
+- Obey robots.txt and explicit noindex directives.
+- Search pages are utility pages and may be non-indexable.
+
+## Contact and ownership
+
+Site owner: {{ site.author }}
+Website: {{ site.url }}

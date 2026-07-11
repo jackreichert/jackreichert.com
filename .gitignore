@@ -1,0 +1,12 @@
+node_modules/
+_site/
+.DS_Store
+.claude
+.env
+.env.*
+content/posts.__tmp/
+content/pages.__tmp/
+content/posts.__bak/
+content/pages.__bak/
+*.swp
+*.swo

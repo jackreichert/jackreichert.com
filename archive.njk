@@ -1,0 +1,65 @@
+---
+layout: base.njk
+title: Musings
+permalink: /archive/
+---
+<section class="archive-wrap">
+  <header class="archive-head">
+    <h1>Musings</h1>
+    <p>{{ collections.posts | length }} musings, {{ buildYear - (collections.posts | last).date.getUTCFullYear() + 1 }} years — newest first.</p>
+  </header>
+  {%- for group in collections.posts | groupByYear %}
+  <div class="archive-year-group">
+    <h2 class="archive-year">{{ group.year }}</h2>
+    <div class="archive-items">
+      {%- for post in group.items %}
+      <p class="archive-item">
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </p>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ site.url | json | safe }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Musings",
+      "item": {{ (site.url + '/archive/') | json | safe }}
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Musings",
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "numberOfItems": {{ collections.posts | length }},
+  "itemListElement": [
+    {%- for post in collections.posts %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "url": {{ (site.url + post.url) | json | safe }},
+      "name": {{ post.data.title | json | safe }}
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}
+</script>

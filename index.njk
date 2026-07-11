@@ -1,0 +1,53 @@
+---
+layout: base.njk
+---
+{%- set posts = collections.posts %}
+<h1 class="sr-only">{{ site.name }} — {{ site.tagline }}</h1>
+{%- for post in posts.slice(0, 6) %}
+<article class="entry{% if loop.first %} entry--lead{% endif %}">
+  {%- if post.data.featured_image %}
+  <img class="image-heading" src="{{ post.data.featured_image }}" alt="" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy" decoding="async"{% endif %} width="1600" height="640">
+  {%- endif %}
+  <header class="entry-header{% if post.data.featured_image %} with-img{% endif %}">
+    <div class="entry-head">
+      <time class="vdate" datetime="{{ post.date | isoDate }}">
+        <span class="month">{{ post.date | monthName }}</span>
+        <span class="day">{{ post.date.getUTCDate() }}</span>
+        <span class="year">{{ post.date | year }}</span>
+      </time>
+      <h2 class="entry-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+      <p class="entry-meta"><em>By {{ site.author }}</em></p>
+    </div>
+  </header>
+  <div class="entry-content">
+    {%- if post.data.description %}
+    <p>{{ post.data.description | excerptClean }}</p>
+    {%- endif %}
+    <p class="continue"><a href="{{ post.url }}">Continue reading…</a></p>
+  </div>
+  {%- set cats = post.data.categories | realCategories %}
+  {%- if cats.length %}
+  <footer class="doublebar">
+    <small class="db-content">Published in {% for c in cats %}<a href="/category/{{ c | slugify }}/">{{ c }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</small>
+  </footer>
+  {%- endif %}
+</article>
+{%- endfor %}
+
+<section aria-labelledby="more-essays-title">
+  <div class="doublebar">
+    <small class="db-content" id="more-essays-title">More musings</small>
+  </div>
+  <div class="more-essays">
+    {%- for post in posts.slice(6, 16) %}
+    <p class="more-essays-item">
+      <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </p>
+    {%- endfor %}
+  </div>
+</section>
+
+<nav class="doublebar" aria-label="Musings">
+  <small class="db-content">{{ posts | length }} musings since {{ (posts | last).date | year }} — <a href="/archive/">browse musings</a></small>
+</nav>

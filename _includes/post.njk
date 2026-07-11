@@ -1,0 +1,122 @@
+---
+layout: base.njk
+---
+{%- set canonicalUrl = site.url + (page.url or "/") %}
+<article class="entry">
+  {%- if featured_image %}
+  <img class="image-heading" src="{{ featured_image }}" alt="{{ featured_caption or '' }}" fetchpriority="high" width="1600" height="900">
+  {%- endif %}
+  <header class="entry-header{% if featured_image %} with-img{% endif %}">
+    <div class="entry-head">
+      <time class="vdate" datetime="{{ page.date | isoDate }}">
+        <span class="month">{{ page.date | monthName }}</span>
+        <span class="day">{{ page.date.getUTCDate() }}</span>
+        <span class="year">{{ page.date | year }}</span>
+      </time>
+      <h1 class="entry-title">{{ title }}</h1>
+      {%- set deck = description | deckLine %}
+      {%- if deck and not (deck | deckDuplicatesIntro(content)) %}
+      <p class="entry-deck">{{ deck }}</p>
+      {%- endif %}
+      <p class="entry-meta"><em>By {{ site.author }} · {{ content | readingTime }}</em></p>
+    </div>
+  </header>
+  {%- if featured_image and featured_caption %}
+  <p class="plate-caption">{{ featured_caption }}</p>
+  {%- endif %}
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+  {%- if post_tags %}
+  <p class="tags">Tags: {% for tag in post_tags %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+  {%- endif %}
+  {%- set cats = categories | realCategories %}
+  {%- if cats.length %}
+  <footer class="doublebar">
+    <small class="db-content">Published in {% for c in cats %}<a href="/category/{{ c | slugify }}/">{{ c }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</small>
+  </footer>
+  {%- endif %}
+</article>
+{%- set newerPost = collections.posts | getPreviousCollectionItem %}
+{%- set olderPost = collections.posts | getNextCollectionItem %}
+{%- if newerPost or olderPost %}
+<nav class="pagenav" aria-label="More musings">
+  <div class="pagenav-inner">
+    {%- if olderPost %}
+    <div class="pagenav-item">
+      <span class="pagenav-label">← Earlier</span>
+      <a href="{{ olderPost.url }}">{{ olderPost.data.title }}</a>
+    </div>
+    {%- endif %}
+    {%- if newerPost %}
+    <div class="pagenav-item next">
+      <span class="pagenav-label">Later →</span>
+      <a href="{{ newerPost.url }}">{{ newerPost.data.title }}</a>
+    </div>
+    {%- endif %}
+  </div>
+</nav>
+{%- endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | json | safe }},
+  "description": {{ (description or site.description) | json | safe }},
+  "datePublished": {{ (page.date | isoDate) | json | safe }},
+  "dateModified": {{ (page.date | isoDate) | json | safe }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author | json | safe }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.name | json | safe }}
+  },
+  "mainEntityOfPage": {{ canonicalUrl | json | safe }},
+  "url": {{ canonicalUrl | json | safe }}{% if featured_image %},
+  "image": {{ (site.url + featured_image) | json | safe }}{% endif %}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ site.url | json | safe }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Musings",
+      "item": {{ (site.url + '/archive/') | json | safe }}
+    }{%- set cats = categories | realCategories %}{% if cats.length %},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ cats[0] | json | safe }},
+      "item": {{ (site.url + '/category/' + (cats[0] | slugify) + '/') | json | safe }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": {{ title | json | safe }},
+      "item": {{ canonicalUrl | json | safe }}
+    }
+    {%- else %},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ title | json | safe }},
+      "item": {{ canonicalUrl | json | safe }}
+    }
+    {%- endif %}
+  ]
+}
+</script>
