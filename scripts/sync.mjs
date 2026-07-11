@@ -130,7 +130,8 @@ async function downloadImage(src) {
     return localRel;
   } catch (err) {
     console.warn(`  ! failed to download ${url}: ${err.message}`);
-    if (process.env.SYNC_STRICT !== "false") {
+    // By default, warn and continue. Set SYNC_STRICT=true to fail on missing images.
+    if (process.env.SYNC_STRICT === "true") {
       throw new Error(`Required image download failed: ${url}`);
     }
     downloadedImages.set(url, null);
@@ -320,6 +321,8 @@ main().catch((err) => {
     console.error("Next step: WordPress API appears rate-limited or unavailable. Retry in 5-15 minutes.");
   } else if (/ENOSPC/.test(err.message)) {
     console.error("Next step: disk is full. Free space and run sync again.");
+  } else if (/Required image download failed/.test(err.message)) {
+    console.error("Next step: fix the image URL on WordPress, or run with SYNC_STRICT=false to skip missing images.");
   } else {
     console.error("Next step: check network/API status, then rerun with logs.");
   }
