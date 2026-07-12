@@ -14,4 +14,4 @@ Philosophy major, essayist, speaker. Engineering web applications, professionall
 
 JavaScript/TypeScript/NodeJS ♦ ReactJS/Redux ♦ Vue.js ♦ Python ♦ Ruby+Rails ♦ Golang ♦ CSS ♦ PHP ♦ WordPress ♦ Postgres/MySQL ♦ NoSQL ♦ Splunk ♦ DevOps ♦ Docker ♦ Argo ♦ Ansible ♦ AWS ♦ Website optimization ♦ Web security ♦  Systems architecture ♦ Team Development ♦ Career & technical mentorship ♦ Scrum/Agile ♦ Requirement collection & planning ♦ Project Management
 
-[Download my resume](https://jackreichert.wordpress.com/wp-content/uploads/2023/05/jack-reichert-resume-web.pdf)
+[Download my resume](/wp-content/uploads/2023/05/jack-reichert-resume-web.pdf)

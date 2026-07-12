@@ -54,6 +54,6 @@ Now that I’ve been out in the world, and have grown as an engineer, I’d real
 
 \*
 
-If you know of a role that matches my interests you can find me on [LinkedIn](https://www.linkedin.com/in/jackreichert/) or [check out my resume](https://jackreichert.wordpress.com/wp-content/uploads/2023/05/jack-reichert-resume-web.pdf).
+If you know of a role that matches my interests you can find me on [LinkedIn](https://www.linkedin.com/in/jackreichert/) or [check out my resume](/wp-content/uploads/2023/05/jack-reichert-resume-web.pdf).
 
 And if you want to follow my journey, sign up below!

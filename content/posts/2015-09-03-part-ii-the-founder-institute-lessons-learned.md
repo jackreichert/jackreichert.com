@@ -10,7 +10,7 @@ featured_image: "/assets/images/bergdorf-67fcae97.jpeg"
 layout: post
 ---
 
-Some of you are familiar with [Inkwell](/2015/09/01/part-i-inkwell-inc-post-mortem/)—I founded it as part of the curriculum for the Founder Institute (FI). I had come to FI to see what I could do with the idea, and that idea carried me through to graduation.
+Some of you are familiar with [Inkwell](https://www.jackreichert.com/2015/09/01/part-i-inkwell-inc-post-mortem/)—I founded it as part of the curriculum for the Founder Institute (FI). I had come to FI to see what I could do with the idea, and that idea carried me through to graduation.
 
 ### What I got from the Founder Institute
 

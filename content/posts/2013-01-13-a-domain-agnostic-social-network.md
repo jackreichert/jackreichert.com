@@ -9,7 +9,7 @@ description: "Ever since the guys at Diaspora raised 200k on Kickstarter I’ve 
 layout: post
 ---
 
-Ever since the guys at Diaspora raised 200k on Kickstarter I’ve had an itch I am trying to scratch. I [wrote a little bit about this already](/2012/11/21/why-automattic-doesnt-need-to-buy-app-net/) but thought it would be good to flesh out the idea a bit more and put it out there for the sake of “the conversation.”
+Ever since the guys at Diaspora raised 200k on Kickstarter I’ve had an itch I am trying to scratch. I [wrote a little bit about this already](https://www.jackreichert.com/2012/11/21/why-automattic-doesnt-need-to-buy-app-net/) but thought it would be good to flesh out the idea a bit more and put it out there for the sake of “the conversation.”
 
 As users of social networks it’s not ideal that less than a handful of companies have a monopoly over all of our social interactions, and none of these companies are compatible with each other.
 

@@ -65,6 +65,6 @@ Drupal: 72
 Joomla: 68 
 WordPress: 11
 
-For more about the elegance of WordPress’ database read: [How WordPress Works: Dissecting the Database](/2013/12/01/how-wordpress-works-dissecting-the-database/).
+For more about the elegance of WordPress’ database read: [How WordPress Works: Dissecting the Database](https://www.jackreichert.com/2013/12/01/how-wordpress-works-dissecting-the-database/).
 
 In conclusion, I don’t want, ever again, to hear about how bloated WordPress is.

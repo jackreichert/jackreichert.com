@@ -21,7 +21,7 @@ There’s a lot of [hate](https://www.facebook.com/IHateQRCodes) and [cynicism](
 
 I’ve been disappointed with the overall implementation. QR codes are great tools to pass a small amount of information from the physical world to your mobile device. Unfortunately they’re mostly used as a gimmick. Think of them as an alternative to a shortened URL. If you don’t want to force someone type in a long URL, that would be an ideal use for a QR code.
 
-[](/files/2015/01/camera-scan-e14227239392971.png)But you still probably shouldn’t use a QR code for most situations today; unfortunately, you need a special app to use them. Why? I don’t know, QR code deciphering libraries are built into the native iOS camera library. What’s really wrong with QR codes today is that they’re not easy enough to use. If the camera had a “scan” setting along side the useless auto crop tool “square” people might actually discover intelligent implementations of QR codes.
+[](https://www.jackreichert.com/files/2015/01/camera-scan-e14227239392971.png)But you still probably shouldn’t use a QR code for most situations today; unfortunately, you need a special app to use them. Why? I don’t know, QR code deciphering libraries are built into the native iOS camera library. What’s really wrong with QR codes today is that they’re not easy enough to use. If the camera had a “scan” setting along side the useless auto crop tool “square” people might actually discover intelligent implementations of QR codes.
 
 The vast majority of implementation today are ads. When I see one out in the wild I usually won’t pull out my phone because there aren’t good apps for scanning QR codes. I usually snap a picture of the ad if I’m really interested in it, then pull up the ad later when I have an extra minute.
 

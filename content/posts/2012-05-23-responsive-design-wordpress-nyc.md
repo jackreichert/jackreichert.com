@@ -31,6 +31,6 @@ My talk covered the following:
 
 You can follow along with the talk slides as well…
 
-[responsive-web-design](https://jackreichert.wordpress.com/wp-content/uploads/2020/11/responsive-web-design.pdf)[Download](https://jackreichert.wordpress.com/wp-content/uploads/2020/11/responsive-web-design.pdf)
+[responsive-web-design](/wp-content/uploads/2020/11/responsive-web-design.pdf)[Download](/wp-content/uploads/2020/11/responsive-web-design.pdf)
 
 *As always, I love your input. Please comment below and let me know what you think.*

@@ -10,7 +10,7 @@ featured_image: "/assets/images/img_3486-1-bf3dd5c6.jpg"
 layout: post
 ---
 
-My career, and development as an engineer, can be followed through the evolution, redesign, and rebuilding of this site — [www.jackreichert.com](/).
+My career, and development as an engineer, can be followed through the evolution, redesign, and rebuilding of this site — [www.jackreichert.com](http://www.jackreichert.com).
 
 Initially I launched on shared WordPress hosting, and built on top starter themes. It was rudimentary, but it worked, and I got my first full-time tech job with those skills.
 
@@ -24,7 +24,7 @@ Often I’d use my site as a way to learn a new skill, then bring that skill to 
 
 Around the time WordPress launched their WP-API I built a ReactJS-Redux theme. It’s a full WordPress theme, but it loads everything via the api. It’s still the [most forked and starred WordPress ReactJS-Redux theme](https://github.com/jackreichert/a-wp-react-redux-theme) on GitHub.
 
-I took those learnings and helped the company I was working at to relaunch their site with [ReactJS integrated throughout their Frontend](/2017/11/announcing-the-new-isda-org/). We rebuilt EVERYTHING, including the bookstore, and several complicated eCommerce components. But that was main thing I hadn’t known previously and wanted to learn and implement. I learned ReactJS developing this site, and then implemented it back at work.
+I took those learnings and helped the company I was working at to relaunch their site with [ReactJS integrated throughout their Frontend](https://www.jackreichert.com/2017/11/announcing-the-new-isda-org/). We rebuilt EVERYTHING, including the bookstore, and several complicated eCommerce components. But that was main thing I hadn’t known previously and wanted to learn and implement. I learned ReactJS developing this site, and then implemented it back at work.
 
 A few years ago I started working at a new company. We use GoLang and VueJS in our portal. I was curious about static sites, so I rebuilt this site using [Hugo](https://gohugo.io), built off GoLang itself.
 

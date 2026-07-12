@@ -10,7 +10,7 @@ featured_image: "/assets/images/doors-d3fe37f6.jpg"
 layout: post
 ---
 
-Since my [last post about encryption vs. security](/2016/02/on-privacy-vs-security/) the public debate has exploded due to [Tim Cook’s response](https://www.apple.com/customer-letter/) to the [request by the FBI](https://www.fbi.gov/news/pressrel/press-releases/fbi-director-comments-on-san-bernardino-matter) to create a back door in an Apple device.
+Since my [last post about encryption vs. security](https://www.jackreichert.com/2016/02/on-privacy-vs-security/) the public debate has exploded due to [Tim Cook’s response](https://www.apple.com/customer-letter/) to the [request by the FBI](https://www.fbi.gov/news/pressrel/press-releases/fbi-director-comments-on-san-bernardino-matter) to create a back door in an Apple device.
 
 In his [most recent podcast Sam Harris](https://www.samharris.org/podcast/item/meat-without-murder) weighed in as well. I always look forward to Harris’ perspective on a topic. He is thorough, approaches the topic from an unbiased (as much as anyone can) perspective, and creates interesting thought experiments that uncover angles of the topic at hand that often I had missed.
 
@@ -34,7 +34,7 @@ Basic Contractarianism: as members of a society we have given up certain natural
 
 On the other hand, Apple is a multinational company where if they are forced into opening a phone it creates a precedence for other countries that don’t necessarily have the same social contact based on fair rights that we do. This is an entirely different issue that has been pulled into the encryption debate as pertains to multinational companies and government authority.
 
-Enabling a dormant backdoor into cellphones that can be opened, at will, by law enforcement anywhere across all boundaries is a very different issue from opening a specific device that requires physical access to unlock. This, as I *have* already stated, is a lot closer to [installing dormant cameras into everyone’s homes that can be turned on at will](/2016/02/on-privacy-vs-security/), than it is to giving a skeleton key to all private safes. The problem with how technology works is that these boundaries aren’t necessarily enforceable.
+Enabling a dormant backdoor into cellphones that can be opened, at will, by law enforcement anywhere across all boundaries is a very different issue from opening a specific device that requires physical access to unlock. This, as I *have* already stated, is a lot closer to [installing dormant cameras into everyone’s homes that can be turned on at will](https://www.jackreichert.com/2016/02/on-privacy-vs-security/), than it is to giving a skeleton key to all private safes. The problem with how technology works is that these boundaries aren’t necessarily enforceable.
 
 We already know that [this *is* what law enforcement is already doing with similar tools](https://pando.com/2015/06/04/snowden-documents-show-how-the-nsa-expanded-domestic-spying-and-shared-this-data-with-the-fbi/). But even if they are following the spirit and letter of the law pertaining to civilian surveillance, this type of potential *immediate* access to the innermost lives of everyone goes far beyond any previous potential power law enforcement has had, and [it changes us](https://www.alternet.org/news-amp-politics/surveillance-thinking-and-behavior).
 

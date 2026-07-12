@@ -10,7 +10,7 @@ featured_image: "/assets/images/reard-cfd9a88b.jpeg"
 layout: post
 ---
 
-**Edit:** I finished read my thoughts and comments from my [book a week project](/2015/12/my-2015-weekly-book-project/).
+**Edit:** I finished read my thoughts and comments from my [book a week project](https://www.jackreichert.com/2015/12/my-2015-weekly-book-project/).
 
 We all make resolutions as the new year comes around. Most don’t last a month, but half way through, mine seems to have stuck (tfoo tfoo) and I’ve been [reading a book a week](http://jackreichert.net/category/the-weekly-book-project/) since January.
 

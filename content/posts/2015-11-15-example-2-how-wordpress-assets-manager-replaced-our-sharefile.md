@@ -10,7 +10,7 @@ featured_image: "/assets/images/library-way-0e2eb0cf.jpg"
 layout: post
 ---
 
-Two weeks ago I [spoke at WordCamp NYC](/2015/11/06/introducing-wordpress-sitehacks/) and demonstrated various ways you can augment your site by replacing [or just importing various services you use](/2015/11/08/augmenting-ozhs-twitter-archiver/). I brought three examples, last week I wrote about the first, [Twitter](/2015/11/08/augmenting-ozhs-twitter-archiver/).
+Two weeks ago I [spoke at WordCamp NYC](https://www.jackreichert.com/2015/11/06/introducing-wordpress-sitehacks/) and demonstrated various ways you can augment your site by replacing [or just importing various services you use](https://www.jackreichert.com/2015/11/08/augmenting-ozhs-twitter-archiver/). I brought three examples, last week I wrote about the first, [Twitter](https://www.jackreichert.com/2015/11/08/augmenting-ozhs-twitter-archiver/).
 
 The second service on the chopping block was ShareFile.
 
@@ -72,8 +72,8 @@ Want to try it out? [Assets Manager – file sharing for WordPress](https://word
 
 <figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="547" data-attachment-id="670" data-permalink="/screen-shot-2015-11-14-at-9-59-53-am-1024x547-1/" data-orig-file="/assets/images/screen-shot-2015-11-14-at-9.59.53-am-1024x547-1-a3c4543d.png" data-orig-size="1024,547" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="screen-shot-2015-11-14-at-9.59.53-am-1024&#215;547-1" data-image-description="" data-image-caption="" data-large-file="/assets/images/screen-shot-2015-11-14-at-9.59.53-am-1024x547-1-a3c4543d.png" src="/assets/images/screen-shot-2015-11-14-at-9.59.53-am-1024x547-1-a3c4543d.png" alt="" class="wp-image-670" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
-**Note:** This version is not the one we use at work. It doesn’t yet have the file replacement functionality. I’m working on a new version with improved UX. If you have any comments or suggestions [contact me](/contact/).
+**Note:** This version is not the one we use at work. It doesn’t yet have the file replacement functionality. I’m working on a new version with improved UX. If you have any comments or suggestions [contact me](https://www.jackreichert.com/contact/).
 
-**Conclusion:** Here is another example of how [you can leverage the built-in functionality of WordPress to create a service](/2015/11/06/introducing-wordpress-sitehacks/) that you can manage yourself; instead of handing over your intellectual property to a third party.
+**Conclusion:** Here is another example of how [you can leverage the built-in functionality of WordPress to create a service](https://www.jackreichert.com/2015/11/06/introducing-wordpress-sitehacks/) that you can manage yourself; instead of handing over your intellectual property to a third party.
 
 I could have built it from scratch, or using a “proper” framework, but now I can pop this plugin into any site I run and have it seamlessly integrated.

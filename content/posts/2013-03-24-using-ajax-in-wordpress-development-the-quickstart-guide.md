@@ -9,7 +9,7 @@ description: "Edit: Enjoyed this? Check out my new post on AJAX using JSONP in W
 layout: post
 ---
 
-**Edit:** ***Enjoyed this?** Check out my new post on [AJAX using JSONP in WordPress](/2014/11/using-jsonp-in-wordpress-development-the-quick-and-dirty-quickstart-guide/).*
+**Edit:** ***Enjoyed this?** Check out my new post on [AJAX using JSONP in WordPress](https://www.jackreichert.com/2014/11/using-jsonp-in-wordpress-development-the-quick-and-dirty-quickstart-guide/).*
 
 * * *
 

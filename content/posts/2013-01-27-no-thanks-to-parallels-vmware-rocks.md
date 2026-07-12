@@ -9,7 +9,7 @@ description: "Being an Apple fanboy (at least for now) my main devices tend to b
 layout: post
 ---
 
-Being an Apple fanboy (at least for now) my main devices tend to be Apple. But as a Front-end Developer I still need to test my sites in [Internet Explorer](/2011/08/22/a-new-fail-way-to-run-internet-explorer-on-your-mac/). I found that, truly, the best way is in Virtual Machines. Simulators just can’t capture the authentic buggy experience of true cross browser testing. To honestly test your site you need to use the actual browsers themselves.
+Being an Apple fanboy (at least for now) my main devices tend to be Apple. But as a Front-end Developer I still need to test my sites in [Internet Explorer](https://www.jackreichert.com/2011/08/22/a-new-fail-way-to-run-internet-explorer-on-your-mac/). I found that, truly, the best way is in Virtual Machines. Simulators just can’t capture the authentic buggy experience of true cross browser testing. To honestly test your site you need to use the actual browsers themselves.
 
 An added benefit of running Windows on my Mac is being able to enjoy reliving my and my wife’s childhood games. We’ve been going through Gog.com playing classics such as Gabriel Knight, Quest for Glory, and Betrayal at Krondor. I’m a big fan of Lifehacker so if they tell me that the [Best Virtualization App for Mac OSX is Parallels](https://lifehacker.com/5861391/the-best-virtualization-app-for-mac-os-x) I’ll tend to trust them. Unfortunately, this wasn’t the case this time. At least not with Parallels 8.
 

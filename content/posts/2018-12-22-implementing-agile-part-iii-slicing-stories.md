@@ -14,7 +14,7 @@ This is the piece of the puzzle I couldn’t figure out by myself. I needed to s
 
 I’ve seen a lot of stories sliced wrong, and some sliced well. Slicing stories properly can be the difference between a high performance team, and one floundering.
 
-A story – a task or ticket – is a slice of work that is defined by a product owner. It is supposed to provide business value. These stories are collected on the SCRUM board – [a version of a Kanban board](/2018/11/implementing-agile-part-ii/). Developers pick up stories and work through them.
+A story – a task or ticket – is a slice of work that is defined by a product owner. It is supposed to provide business value. These stories are collected on the SCRUM board – [a version of a Kanban board](https://www.jackreichert.com/2018/11/implementing-agile-part-ii/). Developers pick up stories and work through them.
 
 There is a lot of material to be found online about how to write a SCRUM story, so I will not go into too much depth here. The purpose of this post is to provide an overview, and focus on what I’ve found to be most effective.
 

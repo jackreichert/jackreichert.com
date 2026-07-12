@@ -10,7 +10,7 @@ featured_image: "/assets/images/branch-27d354ad.jpeg"
 layout: post
 ---
 
-I’ve already written about [How to use JSONP in WordPress Development](/2014/11/using-jsonp-in-wordpress-development-the-quick-and-dirty-quickstart-guide/). I explain how it works, and why you would use it there.
+I’ve already written about [How to use JSONP in WordPress Development](https://www.jackreichert.com/2014/11/using-jsonp-in-wordpress-development-the-quick-and-dirty-quickstart-guide/). I explain how it works, and why you would use it there.
 
 At work we work with several domains and I’ve had to use quite a bit of JSONP, I’ve rethought how to use it, and made this micro-framework to make it a LOT easier. Mostly, I wrote this to solve the problem that I’m using a lot of AJAX, and don’t want the overhead of the .ajax call each time.
 
@@ -66,7 +66,7 @@ if (typeof wp\_jsonp === 'undefined')
 
 /\*\*
  \* Plugin Name: WordPress JSONp Helper
- \* Plugin URI: /2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/
+ \* Plugin URI: http://www.jackreichert.com/2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/
  \* Description: A paradigm for easy AJAX over SSL in WordPress using JSONP.
  \* Version: 0.1
  \* Author: jackreichert
@@ -97,7 +97,7 @@ Here’s the example, you might say, wait a minute, don’t you get a callback f
 
 /\*\*
  \* Plugin Name: another plugin
- \* Plugin URI: /2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/
+ \* Plugin URI: http://www.jackreichert.com/2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/
  \* Description: An example of how you might use wp\_jsonp.
  \* Version: 0.1
  \* Author: jackreichert

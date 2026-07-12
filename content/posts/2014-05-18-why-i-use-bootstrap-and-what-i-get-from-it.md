@@ -9,7 +9,7 @@ description: "I previously wrote about the the Bootstrap front-end framework. In
 layout: post
 ---
 
-I previously wrote about the the [Bootstrap front-end framework](/2012/03/16/why-i-tried-twitters-bootstrap-and-what-i-didnt-get-from-it/). In a nutshell my thoughts then were, it’s a useful tool but if something goes wrong, it’ll be a pain to troubleshoot.
+I previously wrote about the the [Bootstrap front-end framework](https://www.jackreichert.com/2012/03/16/why-i-tried-twitters-bootstrap-and-what-i-didnt-get-from-it/). In a nutshell my thoughts then were, it’s a useful tool but if something goes wrong, it’ll be a pain to troubleshoot.
 
 What I thought then still remains true, if you need to work outside their box, you’ll have a tough time. However, since I first wrote about it, it’s gotten quite a bit more polished.
 

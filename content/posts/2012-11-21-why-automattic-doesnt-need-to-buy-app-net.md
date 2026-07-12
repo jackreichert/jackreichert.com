@@ -11,7 +11,7 @@ layout: post
 
 … It looks like they have their own social API out there already.
 
-Several months ago I suggested that [Automattic purchase Path](/2012/05/25/why-automattic-should-buy-path/). Sadly it turns out that it would probably be too expensive (see comments). But the idea behind the post is still oh so true.
+Several months ago I suggested that [Automattic purchase Path](https://www.jackreichert.com/2012/05/25/why-automattic-should-buy-path/). Sadly it turns out that it would probably be too expensive (see comments). But the idea behind the post is still oh so true.
 
 I *still* want to own my own content. I *still* want to know that I can hide it, take it down, delete it, do whatever the fuck I want with it, *when* I want… because my life is MINE. And I don’t want anyone else owning it, using it in ads, selling it, without my explicit knowledge and control. I **STILL** don’t want my privacy settings changed behind my back and if I wanted my picture to be posted in ads all over the place I would have become a model. And once someone says that they are interested in seeing updates about my life and thoughts I don’t want to have to *pay* for them to see it.
 

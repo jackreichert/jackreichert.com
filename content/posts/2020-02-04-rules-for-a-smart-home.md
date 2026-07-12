@@ -24,7 +24,7 @@ So the question here is are the tools that we’re building actually enhancing o
 
 In my last apartment, I played with the gamut of connected devices and I found some were more helpful than others.
 
-I [fell for Alexa](/2016/05/say-alexa-turn-living-room-lights/) but since then I’ve gotten rid of her. I’d rather reduce the number of spying devices in my home. Mostly, I used it for cooking timers and podcasts, there are plenty of easy ways get that done.
+I [fell for Alexa](https://www.jackreichert.com/2016/05/say-alexa-turn-living-room-lights/) but since then I’ve gotten rid of her. I’d rather reduce the number of spying devices in my home. Mostly, I used it for cooking timers and podcasts, there are plenty of easy ways get that done.
 
 This year I moved into a new home and started from scratch. I wanted to be more thoughtful about what I was incorporating into my smart-home and came up with these rules.
 

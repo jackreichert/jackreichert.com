@@ -22,7 +22,7 @@ This is where [Cforms II](http://www.deliciousdays.com/cforms-plugin/) comes in.
 
 ## Note:
 
-Once you make these adaptations you should be aware that EVERY form you create with Cforms on your site will try to submit the information to Salesforce. If you would like only SOME of your forms to be submitted see the [appendix](/2010/08/howto-salesforce-multiple-web-to-lead-forms-wordpress/#appendix) at the end of the post.
+Once you make these adaptations you should be aware that EVERY form you create with Cforms on your site will try to submit the information to Salesforce. If you would like only SOME of your forms to be submitted see the [appendix](https://www.jackreichert.com/2010/08/howto-salesforce-multiple-web-to-lead-forms-wordpress/#appendix) at the end of the post.
 
 ## Step 1 – Hack Cforms
 

@@ -31,7 +31,7 @@ If you’ve never used it before, [here’s how .gitignore works](https://git-sc
 
 You can also set a global .gitignore for the files you know you will never want to include in any repo (like the .DS\_Store files).
 
-The first line in the [TLDR](/2016/10/how-to-globally-ignore-files-from-git/#tldr) above creates the file that will be used as the global .gitignore in a good location for such a file. Typically config files for a specific user are placed in that user’s home directory. `~/` is a shortcut to that location.
+The first line in the [TLDR](https://www.jackreichert.com/2016/10/how-to-globally-ignore-files-from-git/#tldr) above creates the file that will be used as the global .gitignore in a good location for such a file. Typically config files for a specific user are placed in that user’s home directory. `~/` is a shortcut to that location.
 
 The second line sets the .gitignore file you just created to be used in the global config. This way you never have to add the file specified there to any local .gitignore files in the future.
 

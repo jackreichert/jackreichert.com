@@ -9,7 +9,7 @@ description: "**Edit: **Now that Bootstrap has been around a while I’ve update
 layout: post
 ---
 
-\*\*Edit: \*\*Now that Bootstrap has been around a while I’ve [updated my thoughts](/2014/05/why-i-use-bootstrap-and-what-i-get-from-it/).
+\*\*Edit: \*\*Now that Bootstrap has been around a while I’ve [updated my thoughts](https://www.jackreichert.com/2014/05/why-i-use-bootstrap-and-what-i-get-from-it/).
 
 ~=~=~=~=~
 

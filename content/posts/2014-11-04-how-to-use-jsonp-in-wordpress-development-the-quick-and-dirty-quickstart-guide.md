@@ -9,7 +9,7 @@ description: "Edit: Looking for an easier way to do JSONP in WordPress? What IS 
 layout: post
 ---
 
-**Edit:** [Looking for an easier way to do JSONP in WordPress?](/2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/)
+**Edit:** [Looking for an easier way to do JSONP in WordPress?](https://www.jackreichert.com/2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/)
 
 * * *
 
@@ -17,9 +17,9 @@ layout: post
 
 There’s been a lot of debate lately about whether to move your site to SLL (https) or not. It’s clear, though, that all your forms, at least the ones that handle sensitive data like logins, should go over a secure connection.
 
-If your whole site is SSL then you won’t have any issues with making [AJAX calls](/2013/03/24/using-ajax-in-wordpress-development-the-quickstart-guide/); however, if you DO go hybrid then Javascript will consider all the pages that are SSL as a separate domain and will block AJAX calls to them.
+If your whole site is SSL then you won’t have any issues with making [AJAX calls](https://www.jackreichert.com/2013/03/24/using-ajax-in-wordpress-development-the-quickstart-guide/); however, if you DO go hybrid then Javascript will consider all the pages that are SSL as a separate domain and will block AJAX calls to them.
 
-**Use case:** You want to secure your admin area and you add `define(‘FORCE\_SSL\_ADMIN’, true)` to your `wp-config.php` file. [You’ll remember](/2013/03/24/using-ajax-in-wordpress-development-the-quickstart-guide/) that to make AJAX calls in WordPress you need to call: `/wp-admin/admin-ajax.php.` But that will now be an SSL connection and violates Javascript’s “**[same-origin policy](https://en.wikipedia.org/wiki/Same-origin_policy)”.**
+**Use case:** You want to secure your admin area and you add `define(‘FORCE\_SSL\_ADMIN’, true)` to your `wp-config.php` file. [You’ll remember](https://www.jackreichert.com/2013/03/24/using-ajax-in-wordpress-development-the-quickstart-guide/) that to make AJAX calls in WordPress you need to call: `/wp-admin/admin-ajax.php.` But that will now be an SSL connection and violates Javascript’s “**[same-origin policy](https://en.wikipedia.org/wiki/Same-origin_policy)”.**
 
 This is where JSONP comes into the picture. As you probably know, you \_CAN \_include scripts from other sites using a script tag, that ability is the foundation of CDNs. JSONP takes advantage of that functionality.
 
@@ -75,7 +75,7 @@ The most important pieces in the example that you’ll need to get your code run
 <?php
 /\*\*
 \* Plugin Name: Ajax SSL Example
-\* Plugin URI: /
+\* Plugin URI: http://www.jackreichert.com/
 \* Description: A simple plugin example that implements jsonp in WordPress.
 \* Version: 0.1
 \* Author: Jack Reichert

@@ -16,4 +16,4 @@ layout: post
 
 [Watch it on WordPress.tv](https://wordpress.tv/2015/12/20/jack-reichert-wordpress-your-world-your-data/)
 
-[The slides](/2015/10/wordpress-your-world-your-data-slides/)
+[The slides](https://www.jackreichert.com/2015/10/wordpress-your-world-your-data-slides/)

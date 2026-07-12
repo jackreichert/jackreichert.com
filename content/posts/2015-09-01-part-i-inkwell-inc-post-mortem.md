@@ -10,7 +10,7 @@ featured_image: "/assets/images/harp-d596cc90.jpeg"
 layout: post
 ---
 
-Some of you are familiar with Inkwell—I founded it as part of the curriculum for the [Founder Institute](/2015/09/03/part-ii-the-founder-institute-lessons-learned/). I had come to FI to see what I could do with the idea, and that idea carried me through to graduation.
+Some of you are familiar with Inkwell—I founded it as part of the curriculum for the [Founder Institute](https://www.jackreichert.com/2015/09/03/part-ii-the-founder-institute-lessons-learned/). I had come to FI to see what I could do with the idea, and that idea carried me through to graduation.
 
 ## The Idea
 

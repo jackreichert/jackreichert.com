@@ -10,7 +10,7 @@ featured_image: "/assets/images/twitterhq-0480d652.jpg"
 layout: post
 ---
 
-Last week I [spoke at WordCamp NYC](/2015/11/06/introducing-wordpress-sitehacks/) and demonstrated various ways you can augment your site by replacing or just importing various services you use.
+Last week I [spoke at WordCamp NYC](https://www.jackreichert.com/2015/11/06/introducing-wordpress-sitehacks/) and demonstrated various ways you can augment your site by replacing or just importing various services you use.
 
 The first service on the chopping block was Twitter.
 
@@ -56,7 +56,7 @@ I thought that it might be an interesting undertaking to try and enhance his plu
 
 Before I get into the details of how why, you can follow along in the [github repo](https://github.com/jackreichert/csv-importer-for-ozh-twitter/blob/master/importer-for-ozh.php#L362).
 
-The code in the repo is a bit hacky. I did it quickly, and don’t plan on releasing it officially in the plugin directory. I pushed it, unpolished, so you can take it and run with it. You’ll see some bad practices. Please ignore them. You’ll also see JS in the php file and a separate JS file altogether, this happened because I plopped in my [jsonp code](/2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/) and didn’t incorporate it seamlessly. My augmentation plugin doesn’t check if the original plugin is installed, nor does it check if any methods it relies upon exist.
+The code in the repo is a bit hacky. I did it quickly, and don’t plan on releasing it officially in the plugin directory. I pushed it, unpolished, so you can take it and run with it. You’ll see some bad practices. Please ignore them. You’ll also see JS in the php file and a separate JS file altogether, this happened because I plopped in my [jsonp code](https://www.jackreichert.com/2015/07/02/how-to-jsonp-ajax-to-ssl-in-wordpress-an-easier-way/) and didn’t incorporate it seamlessly. My augmentation plugin doesn’t check if the original plugin is installed, nor does it check if any methods it relies upon exist.
 
 This is an example of what I tell my developers:
 

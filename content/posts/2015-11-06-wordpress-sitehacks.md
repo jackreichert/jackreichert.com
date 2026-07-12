@@ -23,7 +23,7 @@ Since the advent of custom posts and taxonomy, along with postmeta, you can stor
 
 Along with [Redis object caching](https://www.digitalocean.com/community/tutorials/how-to-configure-redis-caching-to-speed-up-wordpress-on-ubuntu-14-04), you can get pretty far proving a prototype or plain out implementing a concept built on top of your WordPress installation, and still scale. Given all the features built-in and actively improved upon by the WordPress contributors –like user management, security, plugins, and themes – it’s an ideal platform to build things on.
 
-There are a lot of great services out there. Many are free. We all know that if you’re not paying for it with money, you’re paying for the service by providing your information. [Some of these services are worth that payment](/2015/10/27/are-online-services-evil/), as they provide value to you, *because you give them that data,* like Facebook and Twitter whose social graphs are augmented by the data you provide.
+There are a lot of great services out there. Many are free. We all know that if you’re not paying for it with money, you’re paying for the service by providing your information. [Some of these services are worth that payment](https://www.jackreichert.com/2015/10/27/are-online-services-evil/), as they provide value to you, *because you give them that data,* like Facebook and Twitter whose social graphs are augmented by the data you provide.
 
 But even with these beneficial services, you’d be devastated if you lost that data. As for the services that don’t provide extra value, why not replace them altogether?
 

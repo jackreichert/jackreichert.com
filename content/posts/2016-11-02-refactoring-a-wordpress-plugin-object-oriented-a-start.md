@@ -10,7 +10,7 @@ featured_image: "/assets/images/graveyard-yolo-04bacb7c.jpg"
 layout: post
 ---
 
-I recently [dissected  an Object Oriented WordPress plugin boilerplate](/2016/06/object-oriented-wordpress-plugin-development/). This exploration was part of a project I am undertaking to explore best practices for implementing Object Oriented principles in WordPress development.
+I recently [dissected  an Object Oriented WordPress plugin boilerplate](https://www.jackreichert.com/2016/06/object-oriented-wordpress-plugin-development/). This exploration was part of a project I am undertaking to explore best practices for implementing Object Oriented principles in WordPress development.
 
 When it comes to implementing coding principles, I’m generally not a purist — I aim to be utilitarian. One of the dictums I drum into my team is: “Make it work, *then* make it work well.” Do not take that to mean I’m sloppy, the second half of that statement holds as much weight as the first.
 
@@ -52,7 +52,7 @@ This should be renamed to match the directory (assets-manager), but I’m not su
 
 The main job of this class is to instantiate all the other pieces of the plugin; I may implement an autoloader here at some point. While this class is dependent on ALL the other classes, since the only thing it does is instantiate all the other classes, it still is a fairly stable class. It doesn’t care about the intricacies of the other classes it uses. As long as the function names stay the same, you will only have to change this class if you need to add another component.
 
-The other minor job of this class is to ensure that the [rewrite rules are flushed when the post type is being created](/2016/07/doesnt-flush_rewrite_rules-work-plugin/). Yes, this class is supposed to do one thing, but other, more pure ways of doing this would be convoluted — creating then deleting options in the database. I thought that that was silly to do simply to keep with a guideline, so I opted for this small infraction.
+The other minor job of this class is to ensure that the [rewrite rules are flushed when the post type is being created](https://www.jackreichert.com/2016/07/doesnt-flush_rewrite_rules-work-plugin/). Yes, this class is supposed to do one thing, but other, more pure ways of doing this would be convoluted — creating then deleting options in the database. I thought that that was silly to do simply to keep with a guideline, so I opted for this small infraction.
 
 ### inc/Asset\_Post\_Type.php
 
@@ -127,4 +127,4 @@ My goal for this file was twofold:
 
 This isn’t a finished product, nor is it the best I can do. But it’s a good step in the right direction. I learned a lot exploring what other people are doing with their plugins, and it was fun to flex my refactoring muscles to do this project. I hope you enjoyed, I did!
 
-If you have any ideas about what steps you would want to see taken next, feel free to [@jackreichert](https://jackreichert.wordpress.com/mentions/jackreichert/).
+If you have any ideas about what steps you would want to see taken next, feel free to [@jackreichert](/mentions/jackreichert/).

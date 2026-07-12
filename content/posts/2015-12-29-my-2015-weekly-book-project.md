@@ -10,7 +10,7 @@ featured_image: "/assets/images/bookshelf-4b2f810a.jpg"
 layout: post
 ---
 
-A little over a year ago [I embarked on a journey](/2015/06/how-i-reard-audible-has-changed-everything/). I noticed that I was listening to a LOT of podcasts: on my commute, at work, on the treadmill, cooking. I really couldn’t stop. What made me notice the frequency was the fact that I had finished the backlog of [This Week in Startups](http://thisweekinstartups.com/) and saw that I had a lot of empty time… So I decided to try Audible and began eating up books like they were candy, well, now I think they *are* – which is nice. In fact I noticed that my pace was roughly a book a week.
+A little over a year ago [I embarked on a journey](https://www.jackreichert.com/2015/06/how-i-reard-audible-has-changed-everything/). I noticed that I was listening to a LOT of podcasts: on my commute, at work, on the treadmill, cooking. I really couldn’t stop. What made me notice the frequency was the fact that I had finished the backlog of [This Week in Startups](http://thisweekinstartups.com/) and saw that I had a lot of empty time… So I decided to try Audible and began eating up books like they were candy, well, now I think they *are* – which is nice. In fact I noticed that my pace was roughly a book a week.
 
 Last December I saw a post by Joe Hill, I can’t find it anymore. It’s possible that it was only in my head, but I could have sworn that he had posted all the books that he had read in 2014 and his goal had been a book a week. I can’t find it anymore, but [this is the closest I could find to such a post](http://joehillsthrills.tumblr.com/post/106723070492/favorite-reads-2014). Inspired, I decided to try it myself and finish a book a week in 2015.
 

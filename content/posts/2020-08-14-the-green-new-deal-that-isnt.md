@@ -16,7 +16,7 @@ Today I Learned that the “Green New Deal” is not actually a “Green New Dea
 
 I decided to read it and was so frustrated by it I marked it up with a red pen.
 
-[bills-116hres109ih-markup](https://jackreichert.wordpress.com/wp-content/uploads/2021/04/bills-116hres109ih-markup.pdf)[Download](https://jackreichert.wordpress.com/wp-content/uploads/2021/04/bills-116hres109ih-markup.pdf)
+[bills-116hres109ih-markup](/wp-content/uploads/2021/04/bills-116hres109ih-markup.pdf)[Download](/wp-content/uploads/2021/04/bills-116hres109ih-markup.pdf)
 
 First of all it’s vague. There are a lot of unspecific goals and general statements. It could have been far more impactful with clearer, measurable goals, and more sources.
 
