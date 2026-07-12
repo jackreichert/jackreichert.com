@@ -48,7 +48,7 @@ export default {
   // WordPress.com source + stats
   wpcom: {
     // Site identifier for the WP REST API (content sync) and stats `srv` param.
-    site: "jackreichert.com",
+    site: "jackreichert.wordpress.com",
     // WordPress.com blog ID for the stats beacon.
     // Find it: https://public-api.wordpress.com/rest/v1.1/sites/<domain> → "ID".
     // Set to null to disable stats entirely.
