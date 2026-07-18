@@ -5,7 +5,7 @@ permalink: "/2026/04/22/dont-let-ai-make-you-lazy/"
 wp_id: 1866
 categories: ["Uncategorized"]
 description: "Originally published on Built-in Software development has changed a lot in the past 5 years, for better and for worse. Even in the past several weeks the software engineering world has been turned on its head. Now I have one (or many) constant pair-coding buddies (agents) who can type faster, search"
-featured_image: "/assets/images/img_6563-1c5de213.jpg"
+featured_image: "/assets/images/img_2271-43f75e60.jpeg"
 layout: post
 ---
 
