@@ -4,7 +4,8 @@
  *
  * - Fetches all published posts and pages from the WP REST API
  * - Converts HTML content to markdown (frontmatter: title, date, tags, ...)
- * - Downloads every image into assets/images/ and rewrites URLs to local paths
+ * - Downloads every image into assets/images/, resizes/compresses, and rewrites URLs
+ * - Emits 800w/1200w variants for responsive srcset on masters
  * - Rewrites internal links (https://jackreichert.com/...) to relative paths
  * - Output is deterministic, so `git diff` only shows real content changes
  */
@@ -15,6 +16,16 @@ import TurndownService from "turndown";
 import { gfm } from "turndown-plugin-gfm";
 
 import site from "../_data/site.js";
+import sharp from "sharp";
+import {
+  optimizeImageFile,
+  writeAndOptimize,
+  SRCSET_WIDTHS,
+  variantPath,
+  webpCompanionPath,
+  MAX_WIDTH,
+  isOptimizableRaster,
+} from "./lib/images.mjs";
 
 const SITE = site.wpcom.site;
 const API = `https://public-api.wordpress.com/wp/v2/sites/${SITE}`;
@@ -55,14 +66,25 @@ async function fetchAll(type) {
   let page = 1;
   const items = [];
   for (;;) {
+    // _embed=wp:featuredmedia: pages often leave jetpack_featured_media_url empty
+    // even when a featured image is set; the embed supplies source_url as fallback.
+    // _fields must include _links/_embedded or the embed is stripped.
     const batch = await fetchJSON(
-      `${API}/${type}?per_page=${perPage}&page=${page}&status=publish&_fields=id,slug,date,modified,link,title,content,excerpt,categories,tags,jetpack_featured_media_url`
+      `${API}/${type}?per_page=${perPage}&page=${page}&status=publish&_embed=wp:featuredmedia&_fields=id,slug,date,modified,link,title,content,excerpt,categories,tags,featured_media,jetpack_featured_media_url,_links,_embedded`
     );
     items.push(...batch);
     if (batch.length < perPage) break;
     page++;
   }
   return items;
+}
+
+/** Featured image URL: Jetpack field first, then _embedded wp:featuredmedia. */
+function featuredMediaUrl(item) {
+  if (item.jetpack_featured_media_url) return item.jetpack_featured_media_url;
+  const media = item._embedded?.["wp:featuredmedia"]?.[0];
+  if (media?.source_url) return media.source_url;
+  return null;
 }
 
 async function fetchTerms(type) {
@@ -96,6 +118,41 @@ function normalizeImageUrl(src) {
   }
 }
 
+async function ensureOptimized(localAbs) {
+  // Masters from older syncs may still be multi‑MB camera files; re-encode once.
+  if (!(await isOptimizableRaster(localAbs))) return;
+  try {
+    const stat = await fs.stat(localAbs);
+    if (stat.size <= 0) return;
+    const meta = await sharp(localAbs, { failOn: "none" }).metadata();
+    if (!meta.width) return;
+
+    const masterTooBig = meta.width > MAX_WIDTH + 8 || stat.size > 550_000;
+    let missing = false;
+    for (const w of SRCSET_WIDTHS) {
+      if (w >= meta.width) continue;
+      try {
+        await fs.access(variantPath(localAbs, w));
+      } catch {
+        missing = true;
+        break;
+      }
+    }
+    // WebP companion for jpg/png masters
+    const ext = path.extname(localAbs).toLowerCase();
+    if (!missing && ext !== ".webp" && ext !== ".gif" && ext !== ".svg") {
+      try {
+        await fs.access(webpCompanionPath(localAbs));
+      } catch {
+        missing = true;
+      }
+    }
+    if (masterTooBig || missing) await optimizeImageFile(localAbs);
+  } catch {
+    // leave as-is; next full optimize-images pass can recover
+  }
+}
+
 async function downloadImage(src) {
   const url = normalizeImageUrl(src);
   if (!url) return null;
@@ -114,6 +171,7 @@ async function downloadImage(src) {
   try {
     const stat = await fs.stat(localAbs);
     if (stat.size > 0) {
+      await ensureOptimized(localAbs);
       downloadedImages.set(url, localRel);
       return localRel; // already downloaded on a previous run
     }
@@ -124,7 +182,7 @@ async function downloadImage(src) {
   try {
     const res = await fetchWithUA(url);
     if (!res.ok) throw new Error(`${res.status}`);
-    await fs.writeFile(localAbs, Buffer.from(await res.arrayBuffer()));
+    await writeAndOptimize(localAbs, Buffer.from(await res.arrayBuffer()));
     downloadedImages.set(url, localRel);
     console.log(`  image: ${name}`);
     return localRel;
@@ -241,8 +299,9 @@ async function itemToMarkdown(item, { isPage }) {
     if (tags.length) fm.push(`post_tags: [${tags.map(yamlString).join(", ")}]`);
   }
   if (excerpt) fm.push(`description: ${yamlString(excerpt)}`);
-  if (item.jetpack_featured_media_url) {
-    const local = await downloadImage(item.jetpack_featured_media_url);
+  const featuredUrl = featuredMediaUrl(item);
+  if (featuredUrl) {
+    const local = await downloadImage(featuredUrl);
     if (local) fm.push(`featured_image: ${yamlString(local)}`);
   }
   fm.push(`layout: ${isPage ? "page" : "post"}`, "---", "");

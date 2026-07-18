@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- set canonicalUrl = site.url + (page.url or "/") %}
   {%- set isArticle = page.url and (page.url | replace('\\', '/')).slice(0, 3) == '/20' %}
+  {%- set isHome = page.url == "/" %}
   {%- set realCats = categories | default([]) | realCategories %}
   {%- set primarySection = realCats[0] %}
   {%- set socialImage = (featured_image and (site.url + featured_image)) or (site.social.defaultImage and (site.url + site.social.defaultImage)) %}
@@ -59,10 +60,27 @@
   {%- if site.verification.bing %}
   <meta name="msvalidate.01" content="{{ site.verification.bing }}">
   {%- endif %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@100;300;800&display=swap">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  {#- Fonts: preload only faces used above the fold on this page.
+      Brand thin is always in the header; body serif only when reading long text. -#}
+  <link rel="preload" href="/assets/fonts/montserrat-100.woff2" as="font" type="font/woff2" crossorigin>
+  {%- if isArticle or isHome or featured_image %}
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-500.woff2" as="font" type="font/woff2" crossorigin>
+  {%- endif %}
+  {%- set lcpImage = featured_image %}
+  {%- if not lcpImage and isHome and collections.posts and collections.posts.length %}
+  {%- set lcpImage = collections.posts[0].data.featured_image %}
+  {%- endif %}
+  {%- if lcpImage %}
+  {%- set lcpWebp = lcpImage | imageWebp %}
+  {%- set lcpWebpSrcset = lcpImage | imageWebpSrcset %}
+  {%- set lcpSrcset = lcpImage | imageSrcset %}
+  {%- if lcpWebp %}
+  <link rel="preload" href="{{ lcpWebp }}" as="image" type="image/webp" fetchpriority="high" imagesizes="100vw"{% if lcpWebpSrcset %} imagesrcset="{{ lcpWebpSrcset }}"{% endif %}>
+  {%- else %}
+  <link rel="preload" href="{{ lcpImage }}" as="image" fetchpriority="high" imagesizes="100vw"{% if lcpSrcset %} imagesrcset="{{ lcpSrcset }}"{% endif %}>
+  {%- endif %}
+  {%- endif %}
+  <link rel="stylesheet" href="{{ cssHref }}">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -117,24 +135,38 @@
     <small>© {{ buildYear }} {{ site.name }}. All Rights Reserved. {{ site.footerNote }}</small>
   </footer>
   {%- if site.wpcom.blogId %}
-  {#- WordPress.com stats beacon: views appear in the WP stats dashboard,
-      attributed per-post via wp_id (synced from the WP API). -#}
+  {#- WordPress.com stats: kept, but deferred until the page is fully loaded
+      (and idle when available) so it never competes with LCP. -#}
   <script>
-    // Only report real traffic, not local dev browsing.
-    if (!/^(localhost|127\.|0\.0\.0\.0)/.test(location.hostname)) {
-      var s = document.createElement("script");
-      s.src = "https://stats.wp.com/e-{{ statsWeek }}.js";
-      s.defer = true;
-      document.body.appendChild(s);
-      _stq = window._stq || [];
-      _stq.push(["view", {
-        v: "ext",
-        blog: "{{ site.wpcom.blogId }}",
-        post: "{{ wp_id or 0 }}",
-        srv: "{{ site.wpcom.site }}"
-      }]);
-      _stq.push(["clickTrackerInit", "{{ site.wpcom.blogId }}", "{{ wp_id or 0 }}"]);
-    }
+    (function () {
+      if (/^(localhost|127\.|0\.0\.0\.0)/.test(location.hostname)) return;
+      function loadStats() {
+        if (window.__wpStatsLoaded) return;
+        window.__wpStatsLoaded = true;
+        var s = document.createElement("script");
+        s.src = "https://stats.wp.com/e-{{ statsWeek }}.js";
+        s.defer = true;
+        s.async = true;
+        document.body.appendChild(s);
+        window._stq = window._stq || [];
+        _stq.push(["view", {
+          v: "ext",
+          blog: "{{ site.wpcom.blogId }}",
+          post: "{{ wp_id or 0 }}",
+          srv: "{{ site.wpcom.site }}"
+        }]);
+        _stq.push(["clickTrackerInit", "{{ site.wpcom.blogId }}", "{{ wp_id or 0 }}"]);
+      }
+      function schedule() {
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(loadStats, { timeout: 4000 });
+        } else {
+          setTimeout(loadStats, 2000);
+        }
+      }
+      if (document.readyState === "complete") schedule();
+      else window.addEventListener("load", schedule, { once: true });
+    })();
   </script>
   {%- endif %}
 </body>

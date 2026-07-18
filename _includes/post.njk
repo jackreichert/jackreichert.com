@@ -4,7 +4,15 @@ layout: base.njk
 {%- set canonicalUrl = site.url + (page.url or "/") %}
 <article class="entry">
   {%- if featured_image %}
-  <img class="image-heading" src="{{ featured_image }}" alt="{{ featured_caption or '' }}" fetchpriority="high" width="1600" height="900">
+  {{ featured_image | responsivePicture({
+    className: "image-heading",
+    alt: featured_caption or "",
+    sizes: "100vw",
+    width: 1600,
+    height: 900,
+    fetchpriority: "high",
+    decoding: "async"
+  }) | safe }}
   {%- endif %}
   <header class="entry-header{% if featured_image %} with-img{% endif %}">
     <div class="entry-head">

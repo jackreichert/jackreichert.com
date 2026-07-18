@@ -6,11 +6,14 @@
   "description": "Static build of jackreichert.com, synced from WordPress",
   "scripts": {
     "sync": "node scripts/sync.mjs",
+    "optimize-images": "node scripts/optimize-images.mjs",
     "build": "eleventy && pagefind --site _site",
     "dev": "eleventy --serve"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "clean-css": "^5.3.3",
+    "sharp": "^0.35.3",
     "turndown": "^7.2.0",
     "turndown-plugin-gfm": "^1.0.2"
   },

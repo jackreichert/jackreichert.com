@@ -3,8 +3,22 @@ layout: base.njk
 ---
 {%- set isTestimonialsPage = page.url == "/what-others-are-saying/" %}
 {%- set canonicalUrl = site.url + (page.url or "/") %}
-<article class="page{% if isTestimonialsPage %} page--testimonials{% endif %}">
-  <h1 class="page-title">{{ title }}</h1>
+<article class="page{% if isTestimonialsPage %} page--testimonials{% endif %}{% if featured_image %} page--has-image{% endif %}">
+  {%- if featured_image %}
+  {{ featured_image | responsivePicture({
+    className: "image-heading",
+    alt: featured_caption or title,
+    sizes: "100vw",
+    width: 1600,
+    height: 900,
+    fetchpriority: "high",
+    decoding: "async"
+  }) | safe }}
+  {%- endif %}
+  <h1 class="page-title{% if featured_image %} with-img{% endif %}">{{ title }}</h1>
+  {%- if featured_image and featured_caption %}
+  <p class="plate-caption">{{ featured_caption }}</p>
+  {%- endif %}
   <div class="post-body{% if isTestimonialsPage %} testimonials-body{% endif %}">
     {% if isTestimonialsPage %}
     <div class="testimonials-sheet">
@@ -27,6 +41,7 @@ layout: base.njk
     "@type": "WebSite",
     "name": {{ site.name | json | safe }},
     "url": {{ site.url | json | safe }}
-  }
+  }{% if featured_image %},
+  "image": {{ (site.url + featured_image) | json | safe }}{% endif %}
 }
 </script>

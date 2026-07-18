@@ -6,7 +6,27 @@ layout: base.njk
 {%- for post in posts.slice(0, 6) %}
 <article class="entry{% if loop.first %} entry--lead{% endif %}">
   {%- if post.data.featured_image %}
-  <img class="image-heading" src="{{ post.data.featured_image }}" alt="" {% if loop.first %}fetchpriority="high"{% else %}loading="lazy" decoding="async"{% endif %} width="1600" height="640">
+  {%- if loop.first %}
+  {{ post.data.featured_image | responsivePicture({
+    className: "image-heading",
+    alt: "",
+    sizes: "100vw",
+    width: 1600,
+    height: 640,
+    fetchpriority: "high",
+    decoding: "async"
+  }) | safe }}
+  {%- else %}
+  {{ post.data.featured_image | responsivePicture({
+    className: "image-heading",
+    alt: "",
+    sizes: "100vw",
+    width: 1600,
+    height: 640,
+    loading: "lazy",
+    decoding: "async"
+  }) | safe }}
+  {%- endif %}
   {%- endif %}
   <header class="entry-header{% if post.data.featured_image %} with-img{% endif %}">
     <div class="entry-head">

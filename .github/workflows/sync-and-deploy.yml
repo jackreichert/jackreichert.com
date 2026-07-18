@@ -1,6 +1,9 @@
 name: Sync from WordPress & Deploy
 
 on:
+  # Every push to main rebuilds + deploys (CSS, fonts, templates, content, …)
+  push:
+    branches: [main]
   # Manual trigger from the Actions tab
   workflow_dispatch:
   # Poll WordPress.com for new publishes/updates
@@ -32,11 +35,14 @@ jobs:
 
       - run: npm ci
 
+      # Pull WP only on schedule or manual runs (not on every design push).
       - name: Sync content from WordPress
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: npm run sync
 
       - name: Commit synced content
         id: sync_commit
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -50,21 +56,33 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
+      # Always build on push / manual. On schedule, only when sync changed content.
       - name: Build site
-        if: github.event_name == 'workflow_dispatch' || steps.sync_commit.outputs.changed == 'true'
+        if: >
+          github.event_name == 'push' ||
+          github.event_name == 'workflow_dispatch' ||
+          steps.sync_commit.outputs.changed == 'true'
         env:
-          # Custom domain at https://jackreichert.com/ serves from repo root.
           PATH_PREFIX: /
         run: npm run build
 
-      - if: github.event_name == 'workflow_dispatch' || steps.sync_commit.outputs.changed == 'true'
+      - if: >
+          github.event_name == 'push' ||
+          github.event_name == 'workflow_dispatch' ||
+          steps.sync_commit.outputs.changed == 'true'
         uses: actions/configure-pages@v5
 
-      - if: github.event_name == 'workflow_dispatch' || steps.sync_commit.outputs.changed == 'true'
+      - if: >
+          github.event_name == 'push' ||
+          github.event_name == 'workflow_dispatch' ||
+          steps.sync_commit.outputs.changed == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - id: deployment
-        if: github.event_name == 'workflow_dispatch' || steps.sync_commit.outputs.changed == 'true'
+        if: >
+          github.event_name == 'push' ||
+          github.event_name == 'workflow_dispatch' ||
+          steps.sync_commit.outputs.changed == 'true'
         uses: actions/deploy-pages@v4

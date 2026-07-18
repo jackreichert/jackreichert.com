@@ -3,6 +3,7 @@ title: "About Jack"
 date: 2020-09-20
 permalink: "/about-jack/"
 wp_id: 85
+featured_image: "/assets/images/fcdc13d5-8ad4-4969-be8b-ed22567e20e0_1_105_c-6f912e65.jpeg"
 layout: page
 ---
 

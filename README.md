@@ -12,9 +12,18 @@ Static build of jackreichert.com: content is written in WordPress (WordPress.com
 
 | Command | What it does |
 |---|---|
-| `npm run sync` | Pull posts, pages, and images from the WordPress API into `content/` and `assets/images/`. Deterministic — git diff shows only real content changes. |
+| `npm run sync` | Pull posts, pages, and images from the WordPress API into `content/` and `assets/images/`. Images are resized (max 1600px), compressed, given 800w/1200w variants, and mirrored to WebP. Deterministic — git diff shows only real content changes. |
+| `npm run optimize-images` | One-shot re-encode of existing `assets/images/` masters + width/WebP variants (useful after changing quality settings). |
 | `npm run dev` | Eleventy dev server on :8087 (via `.claude/launch.json`) or default port. Search is inert in dev (no Pagefind index) and the WP stats beacon does not fire on localhost. |
-| `npm run build` | Production build: Eleventy → `_site/`, then Pagefind indexes it. |
+| `npm run build` | Production build: Eleventy (minified+hashed CSS, responsive `<picture>`/srcset) → `_site/`, then Pagefind indexes it. |
+
+### Performance pipeline
+
+- **Sync / optimize-images**: resize + compress masters, emit `*-800w.*` / `*-1200w.*`, emit `.webp` companions.
+- **Build**: minify + content-hash CSS (`style.<hash>.css`), wrap images in WebP `<picture>`, lazy-load body images, preload LCP WebP + critical fonts only.
+- **Deploy**: every push to `main` builds and deploys; scheduled runs sync WP and deploy only when content changed.
+- **WP stats**: still loaded, but only after `window.load` + `requestIdleCallback` (never on localhost).
+- **Gzip/Brotli**: left to GitHub Pages / Cloudflare at the edge — not prebuilt in the repo.
 
 ## Architecture
 

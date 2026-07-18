@@ -3,6 +3,79 @@
    letterboxed photographs with overlapping white title cards,
    vertical dates, doublebar rules. Modern craft, same soul. */
 
+/* Self-hosted latin woff2 only — no Google Fonts round-trip. */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/assets/fonts/montserrat-100.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/montserrat-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/assets/fonts/montserrat-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-500-italic.woff2") format("woff2");
+}
+/* Map bold italic / unspecified italic weights to available faces */
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-500-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-500-italic.woff2") format("woff2");
+}
+
 :root {
   --paper: oklch(1 0 0);
   --ink: oklch(0.2 0 0);
@@ -610,7 +683,7 @@ img { max-width: 100%; height: auto; }
   .archive-year-group { grid-template-columns: 1fr; gap: 0.75rem; }
 }
 
-/* generic page title (no image) */
+/* generic page title */
 .page-title {
   max-width: var(--measure);
   margin: clamp(2rem, 5vw, 3rem) auto 1rem;
@@ -621,6 +694,16 @@ img { max-width: 100%; height: auto; }
   line-height: 1.15;
   color: var(--teal);
   text-wrap: balance;
+}
+/* when the page has a featured plate, title sits on a paper card like essays */
+.page-title.with-img {
+  position: relative;
+  z-index: 1;
+  background: var(--paper);
+  width: min(var(--card), calc(100% - 2 * var(--gutter)));
+  max-width: none;
+  margin: -5.25rem auto 1rem;
+  padding: 1.5rem 2rem 0.5rem;
 }
 
 /* ---------------------------------------------------------------- testimonials page */
