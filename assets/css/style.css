@@ -695,15 +695,20 @@ img { max-width: 100%; height: auto; }
   color: var(--teal);
   text-wrap: balance;
 }
-/* when the page has a featured plate, title sits on a paper card like essays */
+/* when the page has a featured plate, title sits on a paper card like essays;
+   the card holds only the h1 (no byline), so the overlap must stay shorter
+   than a one-line title card or the photo peeks out beneath it */
 .page-title.with-img {
   position: relative;
   z-index: 1;
   background: var(--paper);
   width: min(var(--card), calc(100% - 2 * var(--gutter)));
   max-width: none;
-  margin: -5.25rem auto 1rem;
+  margin: -3.75rem auto 1rem;
   padding: 1.5rem 2rem 0.5rem;
+}
+@media (max-width: 44rem) {
+  .page-title.with-img { margin-top: 0; }
 }
 
 /* ---------------------------------------------------------------- testimonials page */
