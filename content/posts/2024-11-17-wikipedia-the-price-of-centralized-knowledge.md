@@ -52,4 +52,4 @@ This same process happened to Copernicus when he proposed a heliocentric model o
 
 No matter how comprehensive any or all the articles are, they will never be as comprehensive as if there were competing encyclopediae. When knowledge is decentralized, different perspectives can develop fully without having to compromise or merge into a single “neutral” narrative.
 
-Wikipedia is a noble endeavor, but I mourn the loss of a diversity of ideas that could spring forth if we had competing encyclopediae. When we centralize knowledge, we may gain efficiency, but we lose the richness that comes from multiple voices telling the same story in different ways.
+Wikipedia is a noble endeavor, but I mourn the loss of a diversity of ideas that could spring forth if we had competing [encyclopediae](https://encyclopediae.org). When we centralize knowledge, we may gain efficiency, but we lose the richness that comes from multiple voices telling the same story in different ways.
