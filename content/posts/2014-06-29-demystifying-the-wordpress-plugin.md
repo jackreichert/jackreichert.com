@@ -26,7 +26,7 @@ I asked one of the guys on my team to build a WordPress plugin, he balked. I rea
 
 Upload that file to `YOUR-SITE-ROOT/wp-content/plugins/` and voilà!
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="92" data-attachment-id="350" data-permalink="/2014/06/29/demystifying-the-wordpress-plugin/img_0009/" data-orig-file="/assets/images/img_0009-9dba0c0b.jpg" data-orig-size="1172,106" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"1"}" data-image-title="img_0009" data-image-description="" data-image-caption="" data-large-file="/assets/images/img_0009-9dba0c0b.jpg?w=1172" src="/assets/images/img_0009-9dba0c0b.jpg" alt="" class="wp-image-350" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="92" data-attachment-id="350" data-permalink="/2014/06/29/demystifying-the-wordpress-plugin/img_0009/" data-orig-file="/assets/images/img_0009-9dba0c0b.jpg" data-orig-size="1172,106" data-comments-opened="0" data-image-meta="{"orientation":"1"}" data-image-title="img_0009" data-image-description="" data-image-caption="" data-large-file="/assets/images/img_0009-9dba0c0b.jpg?w=1172" src="/assets/images/img_0009-9dba0c0b.jpg" alt="" class="wp-image-350" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
 
 Go to your plugins menu and you’ll see your shiny new plugin there.
 

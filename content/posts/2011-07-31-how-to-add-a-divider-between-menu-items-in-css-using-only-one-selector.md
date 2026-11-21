@@ -15,7 +15,7 @@ li { border-right: 1px solid #000000; }
 
 The problem with doing that is how do you *not* have the border after the last element?
 
-<figure class="wp-block-image size-large is-resized"><a href="/assets/images/menu-broken-6be387a5.png"><img loading="lazy" data-attachment-id="167" data-permalink="/menu-broken-2/" data-orig-file="/assets/images/menu-broken-6be387a5.png" data-orig-size="392,72" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="menu-broken" data-image-description="" data-image-caption="" data-large-file="/assets/images/menu-broken-6be387a5.png" src="/assets/images/menu-broken-6be387a5.png" alt="" class="wp-image-167" width="573" height="105" title="menu-broken" sizes="auto, (max-width: 573px) 100vw, 573px"></a></figure>
+<figure class="wp-block-image size-large is-resized"><a href="/assets/images/menu-broken-6be387a5.png"><img loading="lazy" data-attachment-id="167" data-permalink="/menu-broken-2/" data-orig-file="/assets/images/menu-broken-6be387a5.png" data-orig-size="392,72" data-comments-opened="0" data-image-title="menu-broken" data-image-description="" data-image-caption="" data-large-file="/assets/images/menu-broken-6be387a5.png" src="/assets/images/menu-broken-6be387a5.png" alt="" class="wp-image-167" width="573" height="105" title="menu-broken" sizes="auto, (max-width: 573px) 100vw, 573px"></a></figure>
 
 One solution is to add a border to all of the list-items then remove it from the last one:
 

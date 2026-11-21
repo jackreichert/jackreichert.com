@@ -9,7 +9,7 @@ description: "At the bottom of every page of wordpress.org is the above statemen
 layout: post
 ---
 
-<figure class="wp-block-image size-large is-resized"><a href="/assets/images/codeispoetry-efcaae23.png"><img loading="lazy" data-attachment-id="311" data-permalink="/codeispoetry/" data-orig-file="/assets/images/codeispoetry-efcaae23.png" data-orig-size="380,29" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="codeispoetry" data-image-description="" data-image-caption="" data-large-file="/assets/images/codeispoetry-efcaae23.png" src="/assets/images/codeispoetry-efcaae23.png" alt="" class="wp-image-311" width="380" height="29" sizes="auto, (max-width: 380px) 100vw, 380px"></a></figure>
+<figure class="wp-block-image size-large is-resized"><a href="/assets/images/codeispoetry-efcaae23.png"><img loading="lazy" data-attachment-id="311" data-permalink="/codeispoetry/" data-orig-file="/assets/images/codeispoetry-efcaae23.png" data-orig-size="380,29" data-comments-opened="0" data-image-title="codeispoetry" data-image-description="" data-image-caption="" data-large-file="/assets/images/codeispoetry-efcaae23.png" src="/assets/images/codeispoetry-efcaae23.png" alt="" class="wp-image-311" width="380" height="29" sizes="auto, (max-width: 380px) 100vw, 380px"></a></figure>
 
 At the bottom of every page of wordpress.org is the above statement, and it’s not just an empty phrase.
 
@@ -21,7 +21,7 @@ Having influenced me so much, I decided to put WordPress to a test. See if the g
 
 To do so I installed the top CMS platforms on a local environment so I could compare their codebases and database structures with each other. I wasn’t very scientific about what is considered a “top” CMS. I pretty much Googled and made a list of the top few that came up the most. I have not run any performance tests, I may do that for another post. This post is just about structure of code and database. “Code is Poetry” right? Here are my results.
 
-<figure class="wp-block-image size-large"><a href="/assets/images/cms-file-search-1e6775d3.png"><img loading="lazy" width="1024" height="725" data-attachment-id="313" data-permalink="/cms-file-search/" data-orig-file="/assets/images/cms-file-search-1e6775d3.png" data-orig-size="1094,775" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="cms-file-search" data-image-description="" data-image-caption="" data-large-file="/assets/images/cms-file-search-1e6775d3.png?w=1094" src="/assets/images/cms-file-search-1e6775d3.png" alt="" class="wp-image-313" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
+<figure class="wp-block-image size-large"><a href="/assets/images/cms-file-search-1e6775d3.png"><img loading="lazy" width="1024" height="725" data-attachment-id="313" data-permalink="/cms-file-search/" data-orig-file="/assets/images/cms-file-search-1e6775d3.png" data-orig-size="1094,775" data-comments-opened="0" data-image-title="cms-file-search" data-image-description="" data-image-caption="" data-large-file="/assets/images/cms-file-search-1e6775d3.png?w=1094" src="/assets/images/cms-file-search-1e6775d3.png" alt="" class="wp-image-313" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
 
 **File count** (CMS’ in alphabetical order)
 
@@ -30,7 +30,7 @@ Drupal: 1065 files
 Joomla: 5083 files 
 WordPress: 1062 files
 
-<figure class="wp-block-image size-large"><a href="/assets/images/cms-folder-search-ed842a07.png"><img loading="lazy" width="1024" height="725" data-attachment-id="314" data-permalink="/cms-folder-search/" data-orig-file="/assets/images/cms-folder-search-ed842a07.png" data-orig-size="1094,775" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="cms-folder-search" data-image-description="" data-image-caption="" data-large-file="/assets/images/cms-folder-search-ed842a07.png?w=1094" src="/assets/images/cms-folder-search-ed842a07.png" alt="" class="wp-image-314" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
+<figure class="wp-block-image size-large"><a href="/assets/images/cms-folder-search-ed842a07.png"><img loading="lazy" width="1024" height="725" data-attachment-id="314" data-permalink="/cms-folder-search/" data-orig-file="/assets/images/cms-folder-search-ed842a07.png" data-orig-size="1094,775" data-comments-opened="0" data-image-title="cms-folder-search" data-image-description="" data-image-caption="" data-large-file="/assets/images/cms-folder-search-ed842a07.png?w=1094" src="/assets/images/cms-folder-search-ed842a07.png" alt="" class="wp-image-314" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
 
 **Folder count**
 
@@ -56,7 +56,7 @@ The top level folder stat is important. WordPress wins hands-down here. Aside fr
 
 The WordPress codebase is structured beautifully with clear delineation between wp-includes, wp-admin, wp-content. It’s clear what is where, and what is what. You do not have to read through their documentation to see clearly where the core sits, and where you can mess around. You cannot say this about the other CMS platforms.
 
-<figure class="wp-block-image size-large"><a href="/assets/images/cms-folder-breakdown-ad9e8693.png"><img loading="lazy" width="914" height="736" data-attachment-id="315" data-permalink="/cms-folder-breakdown/" data-orig-file="/assets/images/cms-folder-breakdown-ad9e8693.png" data-orig-size="914,736" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="cms-folder-breakdown" data-image-description="" data-image-caption="" data-large-file="/assets/images/cms-folder-breakdown-ad9e8693.png" src="/assets/images/cms-folder-breakdown-ad9e8693.png" alt="" class="wp-image-315" sizes="auto, (max-width: 914px) 100vw, 914px"></a></figure>
+<figure class="wp-block-image size-large"><a href="/assets/images/cms-folder-breakdown-ad9e8693.png"><img loading="lazy" width="914" height="736" data-attachment-id="315" data-permalink="/cms-folder-breakdown/" data-orig-file="/assets/images/cms-folder-breakdown-ad9e8693.png" data-orig-size="914,736" data-comments-opened="0" data-image-title="cms-folder-breakdown" data-image-description="" data-image-caption="" data-large-file="/assets/images/cms-folder-breakdown-ad9e8693.png" src="/assets/images/cms-folder-breakdown-ad9e8693.png" alt="" class="wp-image-315" sizes="auto, (max-width: 914px) 100vw, 914px"></a></figure>
 
 **Now for the Databases: Table count**
 

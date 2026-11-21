@@ -17,7 +17,7 @@ Months later I saw that Coin was starting to ship so I tried to sign into my app
 
 Tap Code: Damn. What was it again?
 
-<figure class="alignleft size-large"><a href="/assets/images/img_0097-f2a8b108.jpg"><img loading="lazy" width="577" height="1024" data-attachment-id="397" data-permalink="/2015/05/08/dont-be-too-clever-with-your-ux-designs-why-i-cancelled-my-coin/img_0097/" data-orig-file="/assets/images/img_0097-f2a8b108.jpg" data-orig-size="640,1136" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="IMG_0097" data-image-description="" data-image-caption="" data-large-file="/assets/images/img_0097-f2a8b108.jpg?w=640" src="/assets/images/img_0097-f2a8b108.jpg" alt="" class="wp-image-397" sizes="auto, (max-width: 577px) 100vw, 577px"></a></figure>
+<figure class="alignleft size-large"><a href="/assets/images/img_0097-f2a8b108.jpg"><img loading="lazy" width="577" height="1024" data-attachment-id="397" data-permalink="/2015/05/08/dont-be-too-clever-with-your-ux-designs-why-i-cancelled-my-coin/img_0097/" data-orig-file="/assets/images/img_0097-f2a8b108.jpg" data-orig-size="640,1136" data-comments-opened="0" data-image-title="IMG_0097" data-image-description="" data-image-caption="" data-large-file="/assets/images/img_0097-f2a8b108.jpg?w=640" src="/assets/images/img_0097-f2a8b108.jpg" alt="" class="wp-image-397" sizes="auto, (max-width: 577px) 100vw, 577px"></a></figure>
 
 I went to reset it, had trouble getting something complicated enough that was acceptable. Again. This time I tried noting it down in 1Password with dashes and dots.
 

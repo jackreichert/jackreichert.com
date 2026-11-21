@@ -13,7 +13,7 @@ For my current side project I needed to allow a user to upload a docx file and t
 
 I chose docx because it is an open standard based on XML. I figured that might make things somewhat easier.
 
-<figure class="wp-block-image size-large"><a href="/assets/images/docx-41faf139.png"><img loading="lazy" width="1024" height="606" data-attachment-id="334" data-permalink="/docx/" data-orig-file="/assets/images/docx-41faf139.png" data-orig-size="1296,768" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="docx" data-image-description="" data-image-caption="" data-large-file="/assets/images/docx-41faf139.png?w=1296" src="/assets/images/docx-41faf139.png" alt="" class="wp-image-334" title="A simple Word document" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
+<figure class="wp-block-image size-large"><a href="/assets/images/docx-41faf139.png"><img loading="lazy" width="1024" height="606" data-attachment-id="334" data-permalink="/docx/" data-orig-file="/assets/images/docx-41faf139.png" data-orig-size="1296,768" data-comments-opened="0" data-image-title="docx" data-image-description="" data-image-caption="" data-large-file="/assets/images/docx-41faf139.png?w=1296" src="/assets/images/docx-41faf139.png" alt="" class="wp-image-334" title="A simple Word document" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
 
 ## Unzip Docx file
 
@@ -21,7 +21,7 @@ Many modern formats these days are compressed directories containing XML files. 
 
 Docx looks like this when unzipped.
 
-<figure class="wp-block-image size-large"><a href="/assets/images/unzipped-0a192c5a.png"><img loading="lazy" width="1024" height="608" data-attachment-id="332" data-permalink="/unzipped/" data-orig-file="/assets/images/unzipped-0a192c5a.png" data-orig-size="1764,1048" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="unzipped" data-image-description="" data-image-caption="" data-large-file="/assets/images/unzipped-0a192c5a.png?w=1600" src="/assets/images/unzipped-0a192c5a.png" alt="" class="wp-image-332" title="Docx unzipped folder structure" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
+<figure class="wp-block-image size-large"><a href="/assets/images/unzipped-0a192c5a.png"><img loading="lazy" width="1024" height="608" data-attachment-id="332" data-permalink="/unzipped/" data-orig-file="/assets/images/unzipped-0a192c5a.png" data-orig-size="1764,1048" data-comments-opened="0" data-image-title="unzipped" data-image-description="" data-image-caption="" data-large-file="/assets/images/unzipped-0a192c5a.png?w=1600" src="/assets/images/unzipped-0a192c5a.png" alt="" class="wp-image-332" title="Docx unzipped folder structure" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
 
 For our purposes the important file is /word/document.xml. That’s were the textual content of the document is stored.
 

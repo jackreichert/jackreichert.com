@@ -26,7 +26,7 @@ Intrigued by the challenge, I decided to implement the theory as a WordPress plu
 9.  Using the WordPress action init the page receives the hash, finds row of active hash in the database and pulls the username, it then removes the hash from database so it can’t be reused
 10.  The page then logs in the **User** using the username pulled and redirects the **User** to the WordPress Dashboard
 
-<figure class="wp-block-image size-large"><a href="/assets/images/qrlogin1-2e35822e.png"><img loading="lazy" width="1024" height="636" data-attachment-id="189" data-permalink="/qrlogin1/" data-orig-file="/assets/images/qrlogin1-2e35822e.png" data-orig-size="1076,669" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="QrLogin1" data-image-description="" data-image-caption="" data-large-file="/assets/images/qrlogin1-2e35822e.png?w=1076" src="/assets/images/qrlogin1-2e35822e.png" alt="" class="wp-image-189" title="QrLogin" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
+<figure class="wp-block-image size-large"><a href="/assets/images/qrlogin1-2e35822e.png"><img loading="lazy" width="1024" height="636" data-attachment-id="189" data-permalink="/qrlogin1/" data-orig-file="/assets/images/qrlogin1-2e35822e.png" data-orig-size="1076,669" data-comments-opened="0" data-image-title="QrLogin1" data-image-description="" data-image-caption="" data-large-file="/assets/images/qrlogin1-2e35822e.png?w=1076" src="/assets/images/qrlogin1-2e35822e.png" alt="" class="wp-image-189" title="QrLogin" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
 
 ## Notes
 

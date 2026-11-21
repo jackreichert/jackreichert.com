@@ -25,7 +25,7 @@ Instead of releasing the plugin as-is, I decided to rebuild it from scratch. Iâ€
 
 ## Features
 
-<figure class="aligncenter size-large"><a href="/assets/images/features-d9488a9b.png"><img loading="lazy" width="608" height="166" data-attachment-id="319" data-permalink="/features/" data-orig-file="/assets/images/features-d9488a9b.png" data-orig-size="608,166" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="features" data-image-description="" data-image-caption="" data-large-file="/assets/images/features-d9488a9b.png" src="/assets/images/features-d9488a9b.png" alt="" class="wp-image-319" sizes="auto, (max-width: 608px) 100vw, 608px"></a></figure>
+<figure class="aligncenter size-large"><a href="/assets/images/features-d9488a9b.png"><img loading="lazy" width="608" height="166" data-attachment-id="319" data-permalink="/features/" data-orig-file="/assets/images/features-d9488a9b.png" data-orig-size="608,166" data-comments-opened="0" data-image-title="features" data-image-description="" data-image-caption="" data-large-file="/assets/images/features-d9488a9b.png" src="/assets/images/features-d9488a9b.png" alt="" class="wp-image-319" sizes="auto, (max-width: 608px) 100vw, 608px"></a></figure>
 
 **Path Obfuscation:**
 

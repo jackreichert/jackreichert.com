@@ -14,7 +14,7 @@ Example: I recently installed on a site I manage the [WordPress HTTPS](http://mv
 
 Once enabling the plugin on a page on the site I checked the “Custom Fields” section (where the postmeta fields are displayed on the post edit page) and lo and behold:
 
-<figure class="wp-block-image size-large"><a href="/assets/images/custom-fields-9db23940.png"><img loading="lazy" width="832" height="151" data-attachment-id="244" data-permalink="/custom-fields/" data-orig-file="/assets/images/custom-fields-9db23940.png" data-orig-size="832,151" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="custom-fields" data-image-description="" data-image-caption="" data-large-file="/assets/images/custom-fields-9db23940.png" src="/assets/images/custom-fields-9db23940.png" alt="" class="wp-image-244" sizes="auto, (max-width: 832px) 100vw, 832px"></a></figure>
+<figure class="wp-block-image size-large"><a href="/assets/images/custom-fields-9db23940.png"><img loading="lazy" width="832" height="151" data-attachment-id="244" data-permalink="/custom-fields/" data-orig-file="/assets/images/custom-fields-9db23940.png" data-orig-size="832,151" data-comments-opened="0" data-image-title="custom-fields" data-image-description="" data-image-caption="" data-large-file="/assets/images/custom-fields-9db23940.png" src="/assets/images/custom-fields-9db23940.png" alt="" class="wp-image-244" sizes="auto, (max-width: 832px) 100vw, 832px"></a></figure>
 
 A new postmeta field had been added.
 

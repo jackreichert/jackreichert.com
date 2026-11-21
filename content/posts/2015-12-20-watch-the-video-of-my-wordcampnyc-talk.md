@@ -12,7 +12,7 @@ layout: post
 
 ## WordPress: YOUR World, YOUR Data
 
-<figure class="wp-block-embed is-type-rich is-provider-videopress wp-block-embed-videopress wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><iframe title="VideoPress Video Player" aria-label="VideoPress Video Player" width="500" height="281" src="https://video.wordpress.com/embed/nEQvxiqD?hd=0&cover=1" frameborder="0" allowfullscreen="" allow="clipboard-write; presentation"></iframe><script src="https://v0.wordpress.com/js/next/videopress-iframe.js?m=1770107250"></script></div></figure>
+<figure class="wp-block-embed is-type-rich is-provider-videopress wp-block-embed-videopress wp-embed-aspect-4-3 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><iframe title="VideoPress Video Player" aria-label="VideoPress Video Player" width="500" height="281" src="https://video.wordpress.com/embed/nEQvxiqD?hd=0&cover=1" frameborder="0" allowfullscreen="" allow="clipboard-write; presentation"></iframe><script src="https://v0.wordpress.com/js/next/videopress-iframe.js?m=1790791280"></script></div></figure>
 
 [Watch it on WordPress.tv](https://wordpress.tv/2015/12/20/jack-reichert-wordpress-your-world-your-data/)
 

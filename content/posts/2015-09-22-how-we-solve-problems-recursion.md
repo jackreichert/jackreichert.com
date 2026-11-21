@@ -14,7 +14,7 @@ From Wikipedia: recursion is the process of repeating items in a “self-similar
 
 Self-similar, in mathematics, is an object that is exactly or approximately similar to a part of itself.
 
-<figure class="alignright size-large"><a href="/assets/images/koch-snowflake-3a40ce7f.gif"><img loading="lazy" width="750" height="468" data-attachment-id="526" data-permalink="/koch-snowflake/" data-orig-file="/assets/images/koch-snowflake-3a40ce7f.gif" data-orig-size="800,500" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="Koch-Snowflake" data-image-description="" data-image-caption="" data-large-file="/assets/images/koch-snowflake-3a40ce7f.gif?w=800" src="/assets/images/koch-snowflake-3a40ce7f.gif" alt="" class="wp-image-526" sizes="auto, (max-width: 750px) 100vw, 750px"></a></figure>
+<figure class="alignright size-large"><a href="/assets/images/koch-snowflake-3a40ce7f.gif"><img loading="lazy" width="750" height="468" data-attachment-id="526" data-permalink="/koch-snowflake/" data-orig-file="/assets/images/koch-snowflake-3a40ce7f.gif" data-orig-size="800,500" data-comments-opened="0" data-image-title="Koch-Snowflake" data-image-description="" data-image-caption="" data-large-file="/assets/images/koch-snowflake-3a40ce7f.gif?w=800" src="/assets/images/koch-snowflake-3a40ce7f.gif" alt="" class="wp-image-526" sizes="auto, (max-width: 750px) 100vw, 750px"></a></figure>
 
 *A Koch curve has an infinitely repeating self-similarity when it is magnified.*
 
@@ -54,7 +54,7 @@ If a piece isn’t quite manageable, we just break it down some more.
 
 Then we can start at the bottom and recurse back through the list merging them back together.
 
-<figure class="alignright size-large"><a href="/assets/images/merge-sort-example-300px-b7d58481.gif"><img loading="lazy" width="300" height="180" data-attachment-id="527" data-permalink="/merge-sort-example-300px/" data-orig-file="/assets/images/merge-sort-example-300px-b7d58481.gif" data-orig-size="300,180" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="Merge-sort-example-300px" data-image-description="" data-image-caption="" data-large-file="/assets/images/merge-sort-example-300px-b7d58481.gif" src="/assets/images/merge-sort-example-300px-b7d58481.gif" alt="" class="wp-image-527" sizes="auto, (max-width: 300px) 100vw, 300px"></a></figure>
+<figure class="alignright size-large"><a href="/assets/images/merge-sort-example-300px-b7d58481.gif"><img loading="lazy" width="300" height="180" data-attachment-id="527" data-permalink="/merge-sort-example-300px/" data-orig-file="/assets/images/merge-sort-example-300px-b7d58481.gif" data-orig-size="300,180" data-comments-opened="0" data-image-title="Merge-sort-example-300px" data-image-description="" data-image-caption="" data-large-file="/assets/images/merge-sort-example-300px-b7d58481.gif" src="/assets/images/merge-sort-example-300px-b7d58481.gif" alt="" class="wp-image-527" sizes="auto, (max-width: 300px) 100vw, 300px"></a></figure>
 
 This function is considered recursive because the function calls itself. The function will check to see if it has a list of numbers that is 1 in length, if it doesn’t it splits the list in half and calls itself on each half, then it merges the results. This effectively does what we described above.
 
@@ -72,7 +72,7 @@ Factorial is another example. Factorial(5) is 1 \* 2 \*3 \* 4 \*5, which is real
 
 Well, apparently it’s everywhere in nature.
 
-<figure class="aligncenter size-large"><a href="/assets/images/romanesco-fractal-broccoli-445eed57.jpg"><img loading="lazy" width="750" height="562" data-attachment-id="528" data-permalink="/romanesco-fractal-broccoli/" data-orig-file="/assets/images/romanesco-fractal-broccoli-445eed57.jpg" data-orig-size="1024,768" data-comments-opened="0" data-image-meta="{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}" data-image-title="romanesco-fractal-broccoli" data-image-description="" data-image-caption="" data-large-file="/assets/images/romanesco-fractal-broccoli-445eed57.jpg?w=1024" src="/assets/images/romanesco-fractal-broccoli-445eed57.jpg" alt="" class="wp-image-528" sizes="auto, (max-width: 750px) 100vw, 750px"></a></figure>
+<figure class="aligncenter size-large"><a href="/assets/images/romanesco-fractal-broccoli-445eed57.jpg"><img loading="lazy" width="750" height="562" data-attachment-id="528" data-permalink="/romanesco-fractal-broccoli/" data-orig-file="/assets/images/romanesco-fractal-broccoli-445eed57.jpg" data-orig-size="1024,768" data-comments-opened="0" data-image-title="romanesco-fractal-broccoli" data-image-description="" data-image-caption="" data-large-file="/assets/images/romanesco-fractal-broccoli-445eed57.jpg?w=1024" src="/assets/images/romanesco-fractal-broccoli-445eed57.jpg" alt="" class="wp-image-528" sizes="auto, (max-width: 750px) 100vw, 750px"></a></figure>
 
 *Here’s a Close-up of a Romanesco broccoli.*
 
