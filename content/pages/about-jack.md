@@ -7,12 +7,12 @@ featured_image: "/assets/images/fcdc13d5-8ad4-4969-be8b-ed22567e20e0_1_105_c-6f9
 layout: page
 ---
 
-As the Director of Web Development and Lead Full-stack Developer at ISDA, I built the web department from the ground up. As Technical Lead for BlueVoyant’s MSS Engineering team I spearheaded and architected the development of a major re-haul of our automation platform.
+I’m an engineering leader and hands-on staff engineer who turns messy, multi-system problems into dependable platforms. At Arya Health, I built the first version of our voice agent, architected a two-way RPA integration framework, and carried our in-flight SOC 2 program through a successful Type II audit. These days I build tools that make AI measurable and dependable, like [WikiDrift](https://wikidrift.encyclopediae.org), [Mithril](https://github.com/jackreichert/mithril) and [Maestro](https://github.com/jackreichert/the-maestro).
 
-In addition to my leadership experience, as a Senior Developer at Shopify I rebuilt [themes.shopify.com](http://themes.shopify.com)’s homepage and wrangled discounts. I authored most forked and starred [ReactJS/Redux WordPress theme](https://github.com/jackreichert/a-wp-react-redux-theme), which got me into the [Arctic Vault](https://archiveprogram.github.com/arctic-vault/). I was also the Lead Front-end Developer for Blackberry Travel’s web application and the technical co-founder of Green Prophet, the Premier Middle East environmental news site.
+Before that, I was a technical lead at BlueVoyant, a senior engineer at Shopify, and built ISDA’s web department from scratch as Director of Web Development. My open-source React WordPress theme ended up in the GitHub Arctic Code Vault, which means some version of my code is sitting in a mine in Svalbard.
 
-Philosophy major, essayist, speaker. Engineering web applications, professionally, full time for a decade and a half. Committed to optimizing, testing, refactoring, and perfecting every aspect of the stack from UX and typography, to architecting projects, to queries and algorithms, to infrastructure as code.
+Away from the keyboard, I build things with my hands. I built our dining room table, and a secret room in our house. I bake sourdough from flour I mill myself, using a starter I caught from the wild yeast outside my house. And one summer I ran with a pack of wild dogs daily.
 
-JavaScript/TypeScript/NodeJS ♦ ReactJS/Redux ♦ Vue.js ♦ Python ♦ Ruby+Rails ♦ Golang ♦ CSS ♦ PHP ♦ WordPress ♦ Postgres/MySQL ♦ NoSQL ♦ Splunk ♦ DevOps ♦ Docker ♦ Argo ♦ Ansible ♦ AWS ♦ Website optimization ♦ Web security ♦  Systems architecture ♦ Team Development ♦ Career & technical mentorship ♦ Scrum/Agile ♦ Requirement collection & planning ♦ Project Management
+I’m obsessed with [space](https://wechoosetogotothemoon.com), love tinkering with [games](https://thepress.app), and organized my neighborhood to [restore our local forest](https://poconoforest.org/).
 
-[Download my resume](/wp-content/uploads/2023/05/jack-reichert-resume-web.pdf)
+I studied philosophy, I’ve written essays for the [Forbes Tech Council](https://www.forbes.com/councils/forbestechcouncil-266/), [Built In](https://builtin.com/authors/jack-reichert) and [Shopify Engineering](https://shopify.engineering/authors/jack-reichert), and once upon a time I guided groups through the Western Wall Tunnels in Jerusalem.
