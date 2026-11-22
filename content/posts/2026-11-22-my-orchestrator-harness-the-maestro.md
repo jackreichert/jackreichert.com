@@ -56,7 +56,7 @@ First the ledger. Flat files that hold what we did. It is the context, but the g
 
 I still needed three answers. What did we learn? What are the priorities? What do I need to do next?
 
-Next I created Xenophon, my ticketing skill. It mirrors Jira locally. It also holds potential future stories. It’s easy to get distracted by rabbit holes when developing. By keeping track of issues as they come up, you can easily prioritize tech debt when you have time, but not get distracted from your current task. I modeled it loosely on \[Beads\]([https://github.com/jackreichert/the-maestro/blob/main/library/SKILL.md](https://github.com/jackreichert/the-maestro/blob/main/library/SKILL.md)), but in Markdown, so I can read it.
+Next I created Xenophon, my ticketing skill. It mirrors Jira locally. It also holds potential future stories. It’s easy to get distracted by rabbit holes when developing. By keeping track of issues as they come up, you can easily prioritize tech debt when you have time, but not get distracted from your current task. I modeled it loosely on [Beads](https://github.com/sttts/beads), but in Markdown, so I can read it.
 
 The library is knowledge I learn while doing the work, about the codebase and the product. I think of it as a personal Confluence. A team should be able to share it. It is where I store plans, tech docs, how a feature works, and institutional knowledge about the codebase. Agents can read it instead of doing the same research again.
 
