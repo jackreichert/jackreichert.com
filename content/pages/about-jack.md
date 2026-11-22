@@ -9,7 +9,7 @@ layout: page
 
 I’m an engineering leader and hands-on staff engineer who turns messy, multi-system problems into dependable platforms. At Arya Health, I built the first version of our voice agent, architected a two-way RPA integration framework, and carried our in-flight SOC 2 program through a successful Type II audit. These days I build tools that make AI measurable and dependable, like [WikiDrift](https://wikidrift.encyclopediae.org), [Mithril](https://github.com/jackreichert/mithril) and [Maestro](https://github.com/jackreichert/the-maestro).
 
-Before that, I was a technical lead at BlueVoyant, a senior engineer at Shopify, and built ISDA’s web department from scratch as Director of Web Development. My open-source React WordPress theme ended up in the GitHub Arctic Code Vault, which means some version of my code is sitting in a mine in Svalbard.
+Before that, I was a technical lead at BlueVoyant, a senior engineer at Shopify where I got to rebuild [themes.shopify.com](https://themes.shopify.com), and built ISDA’s web department from scratch as Director of Web Development. My open-source React WordPress theme ended up in the GitHub Arctic Code Vault, which means some version of my code is sitting in a mine in Svalbard.
 
 Away from the keyboard, I build things with my hands. I built our dining room table, and a secret room in our house. I bake sourdough from flour I mill myself, using a starter I caught from the wild yeast outside my house. And one summer I ran with a pack of wild dogs daily.
 
