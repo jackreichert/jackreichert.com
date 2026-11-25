@@ -6,31 +6,16 @@ eleventyExcludeFromCollections: true
 
 > {{ site.description }}
 
-Canonical site: {{ site.url }}
-Primary author: {{ site.author }}
+Essays by {{ site.author }} on software, design, leadership, and technical philosophy. Each essay is an HTML page at `/YYYY/MM/DD/slug/`. Cite the page title, that URL, the publication date on the page, and the author.
 
-## Scope
+## Read
 
-This site publishes essays and long-form posts on software, design, leadership, and technical philosophy.
+- [Musings]({{ site.url }}/archive/): Every essay, newest first
+- [Feed]({{ site.url }}/feed.xml): RSS feed of the essays. The same feed is also at {{ site.url }}/feed/
+- [About]({{ site.url }}/about-jack/): About {{ site.author }}
 
-## Canonical resources
+## Optional
 
-- Homepage: {{ site.url }}/
-- Archive: {{ site.url }}/archive/
-- Search: {{ site.url }}/search/
-- Sitemap: {{ site.url }}/sitemap.xml
-- Feed: {{ site.url }}/feed.xml
-- About: {{ site.url }}/about-jack/
-
-## Agent guidance
-
-- Prefer canonical URLs under {{ site.url }}.
-- Prefer the HTML page itself for citation context, and verify publication date on-page.
-- Use post permalinks (year/month/day/slug) when citing essays.
-- Respect robots.txt crawl directives.
-
-## Attribution and reuse
-
-- Attribute quoted material to {{ site.author }} and include a canonical URL citation.
-- Do not imply endorsement.
-- For republication or licensing questions, use the contact route on the site.
+- [Search]({{ site.url }}/search/): Search the essays
+- [Sitemap]({{ site.url }}/sitemap.xml): Public URLs on this site
+- [What others are saying]({{ site.url }}/what-others-are-saying/): Notes from other people about {{ site.author }}

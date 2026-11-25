@@ -1,0 +1,10 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+{%- set feedPosts = collections.posts -%}
+{%- set feedTitle = site.name -%}
+{%- set feedHome = site.url + "/" -%}
+{%- set feedLink = site.url + "/feed.xml" -%}
+{%- set feedDescription = site.description -%}
+{%- include "rss-feed.njk" -%}

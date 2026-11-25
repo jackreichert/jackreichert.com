@@ -1,0 +1,10 @@
+---
+permalink: /comments/feed/index.xml
+eleventyExcludeFromCollections: true
+---
+{%- set feedPosts = [] -%}
+{%- set feedTitle = site.name + " — Comments" -%}
+{%- set feedHome = site.url + "/" -%}
+{%- set feedLink = site.url + "/comments/feed/" -%}
+{%- set feedDescription = "This site does not publish comments." -%}
+{%- include "rss-feed.njk" -%}

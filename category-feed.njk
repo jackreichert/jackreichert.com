@@ -1,0 +1,14 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+permalink: "/category/{{ category.slug }}/feed/index.xml"
+eleventyExcludeFromCollections: true
+---
+{%- set feedPosts = category.posts -%}
+{%- set feedTitle = site.name + " — " + category.name -%}
+{%- set feedHome = site.url + "/category/" + category.slug + "/" -%}
+{%- set feedLink = site.url + "/category/" + category.slug + "/feed/" -%}
+{%- set feedDescription = "Essays filed under " + category.name + ", newest first." -%}
+{%- include "rss-feed.njk" -%}
