@@ -11,6 +11,7 @@ import {
   MAX_WIDTH,
   publicWebpPath,
 } from "./scripts/lib/images.mjs";
+import site from "./_data/site.js";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const IMAGES_DIR = path.join(ROOT, "assets", "images");
@@ -54,6 +55,18 @@ function imageSrcset(src, { webp = false } = {}) {
     // Still return master-only for completeness when no variants (rare).
   }
   return parts.join(", ");
+}
+
+// Root-relative URLs in post HTML must be absolute inside a feed.
+function absoluteUrls(html) {
+  const origin = site.url;
+  return String(html || "").replace(
+    /(\s(?:href|src|poster|srcset)\s*=\s*)(["'])([^"']*)\2/gi,
+    (_match, attr, quote, value) => {
+      const abs = value.replace(/(^|,\s*)\/(?!\/)/g, `$1${origin}/`);
+      return `${attr}${quote}${abs}${quote}`;
+    }
+  );
 }
 
 /**
@@ -122,6 +135,18 @@ export default function (eleventyConfig) {
     const dir = path.join(ROOT, "_site", "assets", "css");
     await fsp.mkdir(dir, { recursive: true });
     await fsp.writeFile(path.join(dir, cssFileName), cssBody);
+
+    // GitHub Pages serves a directory's index.xml at the directory URL
+    // (application/xml). These copies are the same essay feed.
+    const feedFile = path.join(ROOT, "_site", "feed.xml");
+    if (fs.existsSync(feedFile)) {
+      const copies = ["feed/index.xml", "rss.xml", "rss/index.xml", "index.xml"];
+      for (const rel of copies) {
+        const dest = path.join(ROOT, "_site", rel);
+        await fsp.mkdir(path.dirname(dest), { recursive: true });
+        await fsp.copyFile(feedFile, dest);
+      }
+    }
   });
 
   eleventyConfig.ignores.add("README.md");
@@ -161,6 +186,9 @@ export default function (eleventyConfig) {
     })
   );
   eleventyConfig.addFilter("isoDate", (date) => new Date(date).toISOString().slice(0, 10));
+  eleventyConfig.addFilter("rfc822", (date) => new Date(date).toUTCString());
+  eleventyConfig.addFilter("rfc3339", (date) => new Date(date).toISOString().replace(/\.\d{3}Z$/, "Z"));
+  eleventyConfig.addFilter("absoluteUrls", absoluteUrls);
   eleventyConfig.addFilter("realCategories", (categories) =>
     (categories || []).filter((c) => c !== "Uncategorized")
   );
