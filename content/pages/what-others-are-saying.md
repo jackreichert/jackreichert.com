@@ -11,6 +11,10 @@ layout: page
 
 \* \* \*
 
+I had the pleasure of working with Jack, and I can’t recommend him highly enough. He’s one of the most intelligent and hardworking engineers I’ve worked with, and he approaches every problem with a genuinely open mind.What sets Jack apart is how deeply he works to understand a problem before building anything. He’s never satisfied \[…\]
+
+― [Stephen McDonnell, Founding Customer Success at Arya](/testimonial/stephen-mcdonnell-founding-customer-success-at-arya/ "Stephen McDonnell, Founding Customer Success at Arya")
+
 I had the pleasure of working with and directly managing Jack up until widespread layoffs hit at Shopify. Jack was initially moved to my team as a result of some restructuring from shifting priorities. Jack had been working as a FED on his previous team, and upon joining my team switched disciplines to BED. Jack \[…\]
 
 ― [Kyle Petroski, Engineering Manager at Shopify](/testimonial/kyle-petroski-engineering-manager-at-shopify/ "Kyle Petroski, Engineering Manager at Shopify")
