@@ -4,7 +4,7 @@ date: 2026-11-24
 permalink: "/2026/11/24/what-are-people-supposed-to-do-now/"
 wp_id: 1943
 categories: ["Uncategorized"]
-post_tags: ["ai", "artificial-intelligence", "writing", "life", "art"]
+post_tags: ["ai", "art", "artificial-intelligence", "life", "writing"]
 description: "With AI moving into, and dominating, more and more areas the question arises: what do we need people for? If models are solving math problems that have been unsolved for 160 years, why do we need mathematicians? If art can be generated at the speed of thought, why do we need artists? If reams of […]"
 featured_image: "/assets/images/lrg_dsc00139-60bf9f32.jpeg"
 layout: post
